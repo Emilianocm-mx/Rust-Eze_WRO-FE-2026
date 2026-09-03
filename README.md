@@ -17,10 +17,10 @@
 
 | Nombre | Rol |
 |---|---|
-| Eduardo | _por definir_ |
-| Emi | _por definir_ |
-| Oliver | _por definir_ |
-| Coach | _por agregar_ |
+| Emi | _Mecánico_ |
+| Oliver | _Eléctrico_ |
+| Paco | _Programador_ |
+| Leo | _Coach_ |
 
 <p align="center">
   <img src="t-photos/Equipo.jpeg" width="400"/>
