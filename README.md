@@ -30,26 +30,45 @@
 
 ## 🏗️ Arquitectura del sistema
 
-El robot usa una arquitectura de **dos controladores** que se comunican por serial:
-
 ```
-┌─────────────────────┐        Serial (USB)        ┌──────────────────────┐
-│   Raspberry Pi 4    │ ─────────────────────────► │      ESP32           │
-│                     │                             │                      │
-│  · RPLidar A1/A2    │   Envía ángulo de giro      │  · Driver TB6612FNG  │
-│  · Lógica de        │   (0–180°)                  │  · Motor DC tracción │
-│    navegación       │                             │  · Servo dirección   │
-│  · Python           │                             │  · C++ (Arduino)     │
-└─────────────────────┘                             └──────────────────────┘
+                         ┌──────────────────────┐
+                         │      ESP32-C6        │
+                         │  Control principal   │
+                         └──────────┬───────────┘
+                                    │
+              ┌─────────────────────┼─────────────────────┐
+              │                     │                     │
+              ▼                     ▼                     ▼
+        ┌───────────┐         ┌───────────┐         ┌───────────┐
+        │  LiDAR    │         │ ESP32-S3  │         │  MG90     │
+        │           │         │ Sense Mini│         │  Servo    │
+        │ Distancia │         │  ESP-CAM  │         │ Dirección │
+        └───────────┘         └───────────┘         └───────────┘
+              │                     │
+              │                     │
+              └──────────┬──────────┘
+                         │
+                         ▼
+                  ┌───────────────┐
+                  │   Lógica de   │
+                  │   navegación  │
+                  └───────┬───────┘
+                          │
+                          ▼
+                  ┌───────────────┐
+                  │  Mini H-Bridge│
+                  │    Driver     │
+                  └───────┬───────┘
+                          │
+                          ▼
+                  ┌───────────────┐
+                  │ Pololu 300 RPM│
+                  │ Motor de      │
+                  │ tracción      │
+                  └───────────────┘
 ```
 
-**Flujo de decisión:**
-1. El RPLidar escanea 360° y mide la distancia a la pared izquierda (~90°) y derecha (~270°)
-2. La Raspberry calcula el ángulo de corrección para mantener el robot centrado en la pista (ancho objetivo: 1000 mm)
-3. Envía el ángulo por serial al ESP32
-4. El ESP32 controla el motor y el servo en consecuencia
 
----
 
 ## 📁 Estructura del repositorio
 
@@ -76,6 +95,30 @@ wro-rusteze/
 
 ---
 
+⚡ Alimentación
+
+La batería LiPo alimenta el sistema y el LM2596 se utiliza para reducir el voltaje para los componentes que necesitan 5 V.
+
+```
+🔋 Batería LiPo
+                 7.4 V
+                   │
+          ┌────────┴────────┐
+          │                 │
+          ▼                 ▼
+    Mini H-Bridge       LM2596
+       7.4 V             ↓ 5 V
+          │                 │
+          ▼          ┌──────┼─────────────┐
+      Motor Pololu   │      │             │
+                     ▼      ▼             ▼
+                  ESP32-C6 LiDAR      ESP32-S3
+                                      Sense Mini
+```
+
+---
+
+
 ## 💻 Código fuente
 
 ### `src/main/main.cpp` — ESP32 (C++/Arduino)
@@ -97,6 +140,41 @@ Lee el **RPLidar** y calcula el ángulo de dirección:
 - Pared derecha: lecturas en el rango 260°–280°
 - Ángulo 90° = recto | < 90° = izquierda | > 90° = derecha
 - Ancho de pista objetivo: **1000 mm**
+
+---
+
+🔄 Funcionamiento general
+
+Al activar el switch, comienza a suministrarse energía al sistema. El ESP32-C6 inicia los diferentes componentes y el LiDAR comienza a obtener información de las distancias alrededor del robot.
+
+Después de un breve periodo de inicialización, se activa el motor de tracción. Mientras el robot avanza, el LiDAR analiza las distancias y la posición de los bloques, permitiendo que el ESP32-C6 determine cómo debe orientarse el robot y ajuste el MG90 para realizar los giros.
+
+Para el segundo reto, la ESP32-S3 Sense Mini con ESP-CAM se encarga de identificar los colores de los bloques. Esta información se combina con la información espacial obtenida mediante el LiDAR para que el robot pueda tomar decisiones durante la navegación.
+
+---
+
+🏁 Separación de los dos retos
+
+Reto 1 — Navegación con LiDAR
+
+El robot utiliza el LiDAR como sistema principal de percepción para medir las distancias a su alrededor y determinar su posición dentro de la pista. El ESP32-C6 procesa esta información y controla el sistema de dirección para realizar la vuelta de manera eficiente.
+
+Reto 2 — Detección de bloques
+
+Para el segundo reto se incorpora la ESP32-S3 Sense Mini con ESP-CAM, encargada de detectar los colores de los bloques. El LiDAR proporciona información sobre la posición y distancia de los bloques, mientras que la cámara permite identificar su color. La combinación de ambas fuentes de información permite al robot tomar decisiones de navegación.
+
+---
+
+🛠️ Componentes principales
+ESP32-C6 — controlador principal del robot.
+ESP32-S3 Sense Mini / ESP-CAM — detección visual de colores.
+LiDAR — medición de distancias y detección de obstáculos/bloques.
+Motor Pololu 300 RPM — sistema de tracción.
+Mini H-Bridge — control del motor.
+MG90 — dirección del robot.
+LM2596 — regulación de voltaje a 5 V.
+Batería LiPo 7.4 V — alimentación.
+Switch — activación del sistema.
 
 ---
 
