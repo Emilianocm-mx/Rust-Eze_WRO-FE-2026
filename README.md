@@ -5,7 +5,7 @@
 ![WRO](https://img.shields.io/badge/WRO-2026-FF6600?style=for-the-badge)
 ![Category](https://img.shields.io/badge/Categoría-Future%20Engineers-blue?style=for-the-badge)
 ![Country](https://img.shields.io/badge/País-México-green?style=for-the-badge)
-![Lang](https://img.shields.io/badge/Lang-C%2B%2B%-yellow?style=for-the-badge)
+![Lang](https://img.shields.io/badge/Lang-C%2B%2B%20-yellow?style=for-the-badge)
 
 </div>
 
