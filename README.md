@@ -211,8 +211,7 @@ pyrplidar
 
 ## 📷 Fotos del vehículo
 
-⚠️ **Pendiente** — agregar fotos en `v-photos/` con los siguientes ángulos requeridos por WRO:
-`front.jpg` · `back.jpg` · `left.jpg` · `right.jpg` · `top.jpg` · `bottom.jpg`
+
 
 ---
 
