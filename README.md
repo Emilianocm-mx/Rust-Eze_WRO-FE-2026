@@ -211,7 +211,7 @@ Coloca los motores, el servo, el LiDAR y los componentes electrónicos en el cha
 
 ### 3. 🔌 Conectar la electrónica
 
-Realiza las conexiones entre el **ESP32-C6**, **LiDAR**, **ESP32-S3 Sense Mini**, **MG90**, **Mini H-Bridge**, motor y **LM2596** siguiendo el diagrama disponible en [`models/`](schemes/Electronic_scheme.jpg).
+Realiza las conexiones entre el **ESP32-C6**, **LiDAR**, **ESP32-S3 Sense Mini**, **MG90**, **Mini H-Bridge**, motor y **LM2596** siguiendo el diagrama disponible en [`schemes/Electronic_scheme`](schemes/Electronic_scheme.jpg).
 
 ### 4. 💻 Cargar el programa
 
