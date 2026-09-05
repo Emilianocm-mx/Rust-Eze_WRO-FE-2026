@@ -231,5 +231,10 @@ El robot estará listo para comenzar las pruebas de navegación y detección de 
 
 ## 📷 Fotos del vehículo
 ---
+Front: [`models/`](v-photos/Front.jpeg/)
+Front_2: [`models/`](v-photos/Front_2.jpeg/)
+Left: [`models/`](v-photos/Left.jpeg/)
+Right: [`models/`](v-photos/Right.jpeg/)
+Top: [`models/`](v-photos/Top.jpeg/)
 
 ---
