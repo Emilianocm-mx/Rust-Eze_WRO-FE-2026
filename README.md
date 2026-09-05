@@ -211,13 +211,12 @@ Coloca los motores, el servo, el LiDAR y los componentes electrónicos en el cha
 
 ### 3. 🔌 Conectar la electrónica
 
-Realiza las conexiones entre el **ESP32-C6**, **LiDAR**, **ESP32-S3 Sense Mini**, **MG90**, **Mini H-Bridge**, motor y **LM2596** siguiendo el diagrama disponible en .
+Realiza las conexiones entre el **ESP32-C6**, **LiDAR**, **ESP32-S3 Sense Mini**, **MG90**, **Mini H-Bridge**, motor y **LM2596** siguiendo el diagrama disponible en [`models/`](schemes/Electronic_scheme.jpg).
 
-## 4. 💻 Cargar el programa
+### 4. 💻 Cargar el programa
 
 Conecta los microcontroladores a una computadora y carga los programas correspondientes.
 
-> 🚧 El software se encuentra actualmente en desarrollo y será agregado y actualizado en el repositorio conforme avance el proyecto.
 
 ### 5. 🔋 Encender y probar
 
@@ -226,27 +225,7 @@ Coloca la batería LiPo, activa el switch y verifica que todos los sistemas func
 El robot estará listo para comenzar las pruebas de navegación y detección de bloques.
 
 
-### Raspberry Pi
 
-```bash
-git clone https://github.com/TU_USUARIO/wro-rusteze.git
-cd wro-rusteze
-pip install -r requirements.txt
-python src/main/Rasp-PC.py
-```
-
-### ESP32 (PlatformIO o Arduino IDE)
-
-1. Abre `src/main/main.cpp` en PlatformIO o Arduino IDE
-2. Instala la librería `ESP32Servo`
-3. Selecciona la placa ESP32 y el puerto correcto
-4. Sube el código
-
----
-
-
-
-> Ver `requirements.txt` para versiones exactas.
 
 ---
 
