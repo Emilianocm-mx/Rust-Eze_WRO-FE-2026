@@ -95,8 +95,8 @@ wro-rusteze/
 
 ---
 
-⚡ Alimentación
-
+## ⚡ Alimentación
+---
 La batería LiPo alimenta el sistema y el LM2596 se utiliza para reducir el voltaje para los componentes que necesitan 5 V.
 
 ```
@@ -143,8 +143,8 @@ Lee el **RPLidar** y calcula el ángulo de dirección:
 
 ---
 
-🔄 Funcionamiento general
-
+## 🔄 Funcionamiento general
+---
 Al activar el switch, comienza a suministrarse energía al sistema. El ESP32-C6 inicia los diferentes componentes y el LiDAR comienza a obtener información de las distancias alrededor del robot.
 
 Después de un breve periodo de inicialización, se activa el motor de tracción. Mientras el robot avanza, el LiDAR analiza las distancias y la posición de los bloques, permitiendo que el ESP32-C6 determine cómo debe orientarse el robot y ajuste el MG90 para realizar los giros.
@@ -153,8 +153,8 @@ Para el segundo reto, la ESP32-S3 Sense Mini con ESP-CAM se encarga de identific
 
 ---
 
-🏁 Separación de los dos retos
-
+## 🏁 Separación de los dos retos
+---
 Reto 1 — Navegación con LiDAR
 
 El robot utiliza el LiDAR como sistema principal de percepción para medir las distancias a su alrededor y determinar su posición dentro de la pista. El ESP32-C6 procesa esta información y controla el sistema de dirección para realizar la vuelta de manera eficiente.
@@ -165,7 +165,8 @@ Para el segundo reto se incorpora la ESP32-S3 Sense Mini con ESP-CAM, encargada 
 
 ---
 
-🛠️ Componentes principales
+## 🛠️ Componentes principales
+---
 ESP32-C6 — controlador principal del robot.
 ESP32-S3 Sense Mini / ESP-CAM — detección visual de colores.
 LiDAR — medición de distancias y detección de obstáculos/bloques.
@@ -212,33 +213,4 @@ pyrplidar
 ## 📷 Fotos del vehículo
 
 
-
 ---
-
-## 📐 Esquemas
-
-⚠️ **Pendiente** — agregar en `schemes/`:
-- Diagrama de conexiones ESP32 ↔ TB6612FNG ↔ Motor
-- Diagrama de conexiones Raspberry Pi ↔ RPLidar
-- Vista general del cableado
-
----
-
-## 🎬 Video
-
-| Archivo | Descripción |
-|---|---|
-| `Video1_SinObs.mp4` | Ronda de prueba sin obstáculos |
-| _por agregar_ | Ronda con obstáculos |
-
----
-
-## 📓 Engineering Journal
-
-Documentación del proceso de diseño e iteraciones en [`docs/engineering-journal.md`](docs/engineering-journal.md).
-
----
-
-## 📜 Licencia
-
-Uso educativo y competitivo — [MIT License](LICENSE).
