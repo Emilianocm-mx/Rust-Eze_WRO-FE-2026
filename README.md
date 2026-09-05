@@ -231,6 +231,15 @@ El robot estará listo para comenzar las pruebas de navegación y detección de 
 
 ## 📷 Fotos del vehículo
 ---
+
+| Nombre | Rol |
+|---|---|
+| Front | (v-photos/Front.jpeg/) |
+| Front_2 | (v-photos/Front_2.jpeg/) |
+| Left | (v-photos/Left.jpeg/)|
+| Right | (v-photos/Right.jpeg/) |
+| Top | (v-photos/Top.jpeg/) |
+
 Front: [`models/`](v-photos/Front.jpeg/)
 Front_2: [`models/`](v-photos/Front_2.jpeg/)
 Left: [`models/`](v-photos/Left.jpeg/)
