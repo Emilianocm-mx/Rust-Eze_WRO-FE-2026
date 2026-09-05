@@ -118,25 +118,46 @@ La batería LiPo alimenta el sistema y el LM2596 se utiliza para reducir el volt
 
 ## 💻 Código fuente
 
-### `src/main/main.cpp` — ESP32 (C++/Arduino)
-Controla el **motor de tracción** vía driver TB6612FNG y el **servo de dirección** mediante PWM con la librería `ESP32Servo`.
+El programa principal controla el funcionamiento del robot. El **ESP32-C6** recibe y procesa las lecturas del **LiDAR** para conocer las distancias del entorno y utiliza esta información para controlar el movimiento del robot y la dirección mediante el servo.
 
-| Pin | GPIO | Función |
-|---|---|---|
-| STBY | 23 | Habilitador del driver |
-| PWMA | 22 | Velocidad del motor (PWM 1kHz, 8 bits) |
-| AIN1 | 21 | Dirección del motor |
-| AIN2 | 2 | Dirección del motor |
-| servoPin | 4 | Servo de dirección |
+El sistema permite:
 
-El ESP32 espera una señal serial de la Raspberry Pi para iniciar el ciclo de control.
+* 📡 Obtener las lecturas de distancia del LiDAR.
+* 🚗 Controlar el motor de avance mediante el Mini H-Bridge.
+* 🎯 Controlar el servo de dirección **MG90**.
+* ↩️ Detectar curvas y determinar cuándo realizar un giro.
+* 📏 Mantener una distancia determinada respecto a las paredes.
+* 🔄 Corregir automáticamente la dirección durante el recorrido mediante un sistema PID.
+* 🛣️ Detectar cuándo el robot termina un giro y vuelve a la trayectoria.
 
-### `src/main/Rasp-PC.py` — Raspberry Pi (Python)
-Lee el **RPLidar** y calcula el ángulo de dirección:
-- Pared izquierda: lecturas en el rango 80°–100°
-- Pared derecha: lecturas en el rango 260°–280°
-- Ángulo 90° = recto | < 90° = izquierda | > 90° = derecha
-- Ancho de pista objetivo: **1000 mm**
+### Conexiones principales
+
+| Componente | ESP32-C6 | Función              |
+| ---------- | -------: | -------------------- |
+| LiDAR RX   |  GPIO 19 | Recepción de datos   |
+| LiDAR TX   |  GPIO 16 | Transmisión de datos |
+| Motor      |  GPIO 20 | Control del motor    |
+| Servo MG90 |   GPIO 0 | Control de dirección |
+| PWMA       |  GPIO 22 | Velocidad del motor  |
+| AIN1       |   GPIO 2 | Dirección del motor  |
+| AIN2       |  GPIO 23 | Dirección del motor  |
+
+### Funcionamiento del programa
+
+Al iniciar, el **ESP32-C6** configura el motor, el servo y el LiDAR. Después de iniciar el LiDAR, el robot realiza una lectura inicial del entorno y comienza a avanzar.
+
+Durante el recorrido, el LiDAR obtiene diferentes mediciones dependiendo del ángulo. Estas mediciones permiten identificar:
+
+* Distancia frontal.
+* Distancia de los lados.
+* Distancia durante los giros.
+* Espacios abiertos.
+* Posición del robot respecto a las paredes.
+
+Con estos datos, el programa determina cuándo debe realizar un giro y mueve el **servo MG90** hacia la izquierda o derecha. Después del giro, el sistema vuelve a analizar las distancias para continuar con la navegación.
+
+El control de dirección utiliza un **PID**, que realiza pequeñas correcciones en el servo para mantener al robot en una posición adecuada durante las partes rectas del recorrido.
+
 
 ---
 
@@ -190,7 +211,7 @@ Coloca los motores, el servo, el LiDAR y los componentes electrónicos en el cha
 
 ### 3. 🔌 Conectar la electrónica
 
-Realiza las conexiones entre el **ESP32-C6**, **LiDAR**, **ESP32-S3 Sense Mini**, **MG90**, **Mini H-Bridge**, motor y **LM2596** siguiendo el diagrama disponible en [`schemes/`](schemes/).
+Realiza las conexiones entre el **ESP32-C6**, **LiDAR**, **ESP32-S3 Sense Mini**, **MG90**, **Mini H-Bridge**, motor y **LM2596** siguiendo el diagrama disponible en .
 
 ## 4. 💻 Cargar el programa
 
