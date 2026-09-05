@@ -22,9 +22,6 @@
 | Paco | _Programador_ |
 | Leo | _Coach_ |
 
-<p align="center">
-  <img src="t-photos/Equipo.jpeg" width="400"/>
-</p>
 
 ---
 
