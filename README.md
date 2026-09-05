@@ -176,7 +176,34 @@ Switch — activación del sistema.
 
 ---
 
-## 🔧 Instalación y uso
+## 🔧 Instalación y armado
+
+Para construir y poner en funcionamiento el robot, sigue los siguientes pasos:
+
+### 1. 🖨️ Imprimir el chasis
+
+Descarga los modelos 3D disponibles en la carpeta [`models/`](models/) e imprime las piezas necesarias para construir el chasis del robot.
+
+### 2. ⚙️ Ensamblar el robot
+
+Coloca los motores, el servo, el LiDAR y los componentes electrónicos en el chasis siguiendo el diseño del robot.
+
+### 3. 🔌 Conectar la electrónica
+
+Realiza las conexiones entre el **ESP32-C6**, **LiDAR**, **ESP32-S3 Sense Mini**, **MG90**, **Mini H-Bridge**, motor y **LM2596** siguiendo el diagrama disponible en [`schemes/`](schemes/).
+
+## 4. 💻 Cargar el programa
+
+Conecta los microcontroladores a una computadora y carga los programas correspondientes.
+
+> 🚧 El software se encuentra actualmente en desarrollo y será agregado y actualizado en el repositorio conforme avance el proyecto.
+
+### 5. 🔋 Encender y probar
+
+Coloca la batería LiPo, activa el switch y verifica que todos los sistemas funcionen correctamente.
+
+El robot estará listo para comenzar las pruebas de navegación y detección de bloques.
+
 
 ### Raspberry Pi
 
