@@ -120,8 +120,8 @@ Pololu Motor        ▼      ▼          ▼
 
 ## 🛠️ Components
 
-| Component | Description |
-|-----------|-------------|
+| Photo | Component | Description |
+|-----------|-----------|-------------|
 | ![XIAO ESP32-C6](v-photos/XIAOESP32-C6.jpg) | **XIAO ESP32-C6** | • Main microcontroller of the robot <br> • Processes RPLiDAR distance data <br> • Controls steering servo and motor driver <br> • Communicates with ESP32-CAM via UART <br> • Runs navigation and PID control logic |
 | ![RPLiDARA1M8](v-photos/RPLiDARA1M8.jpg) | **RPLiDAR A1M8** | • 360° laser distance scanner <br> • Primary perception sensor for wall following <br> • Detects corners, open spaces and obstacles <br> • Connected to ESP32-C6 via UART (TX/RX) <br> • Powered at 5V from LM2596 |
 | ![Front](v-photos/Front.jpeg) | **ESP32-CAM** | • Handles visual color detection <br> • Identifies red and green traffic sign pillars <br> • Sends color decisions to ESP32-C6 via UART <br> • Used exclusively during the Obstacle Challenge |
