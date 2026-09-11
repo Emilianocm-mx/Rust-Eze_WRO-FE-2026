@@ -211,10 +211,10 @@ Insert the LiPo battery, flip the power switch, and verify all systems initializ
 
 ## 📷 Vehicle Photos
 
-| Front | Front 2 | Left |
+| Front | Front-2 | Right |
 |:---:|:---:|:---:|
 | ![Front](v-photos/Front.jpeg) | ![Front_2](v-photos/Front_2.jpeg) | ![Left](v-photos/Left.jpeg) |
-| **Right** | **Top** | **Isometric** |
+| **Right-2** | **Top** | **Isometric** |
 | ![Right](v-photos/Right.jpeg) | ![Top](v-photos/Top.jpeg) | *Coming soon* |
 
 ---
