@@ -135,14 +135,14 @@ The main program runs on the **XIAO ESP32-C6**, which receives RPLiDAR distance 
 
 ### What the system does
 
-- 📡 Reads 360° distance data from the RPLiDAR A1M8
-- 🏎️ Controls drive motor speed via TB6612FNG motor driver
-- 🎯 Controls MG90 steering servo for directional adjustments
-- ↩️ Detects corners and executes turns automatically
-- 📏 Maintains target distance from track walls
-- 🔄 Applies PID correction to stay centered between walls
-- 🔢 Counts completed laps and stops after 3
-- 🎨 Receives red/green pillar color data from ESP32-CAM (Obstacle Challenge)
+- Reads 360° distance data from the RPLiDAR A1M8
+- Controls drive motor speed via TB6612FNG motor driver
+- Controls MG90 steering servo for directional adjustments
+- Detects corners and executes turns automatically
+- Maintains target distance from track walls
+- Applies PID correction to stay centered between walls
+- Counts completed laps and stops after 3
+- Receives red/green pillar color data from ESP32-CAM (Obstacle Challenge)
 
 ### Open Challenge — How it works
 
