@@ -223,7 +223,11 @@ Insert the LiPo battery, flip the power switch, and verify all systems initializ
 
 | Team | Paco | Emi | Oliver |
 |:---:|:---:|:---:|:---:|
-| ![Team](t-photos/Equipo.jpeg) | ![Paco](t-photos/FrancisoCastillo.jpeg) | ![Emi](t-photos/EmilianoCanche.jpeg) | ![Oliver](t-photos/OliverMascareño.jpeg) |
+|<div align="center"><img src="v-photos/XIAOESP32-C6.jpg" width="250" height="250"></div>) |
+<div align="center"><img src="t-photos/FrancisoCastillo.jpeg" width="250" height="250"></div>| <div align="center"><img src="t-photos/FrancisoCastillo.jpeg" width="250" height="250"></div>
+| <div align="center"><img src="t-photos/FrancisoCastillo.jpeg" width="250" height="250"></div> |
+
+
 
 ---
 
