@@ -13,8 +13,8 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 
 | Name | Role |
 |------|------|
-| Emi | Mechanical Engineer |
-| Oliver | Electronics Engineer |
+| Emi | Mechanical |
+| Oliver | Electronics |
 | Paco | Programmer |
 | Leo | Coach |
 
