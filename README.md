@@ -88,7 +88,7 @@ Motor Driver          Step-down
 Pololu Motor        ▼      ▼          ▼
                ESP32-C6  RPLiDAR  ESP32-CAM
 ```
-
+---
 ### Wiring Diagram
 
 ![Electronic Scheme](schemes/Electronic_Scheme.jpg)
