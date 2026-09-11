@@ -121,17 +121,17 @@ Pololu Motor        ▼      ▼          ▼
 ## 🛠️ Components
 
 | Photo | Component | Description |
-|-----------|-----------|-------------|
-| <img src="v-photos/XIAOESP32-C6.jpg" width="200" height="200" center>| **XIAO ESP32-C6** | • Main microcontroller of the robot <br> • Processes RPLiDAR distance data <br> • Controls steering servo and motor driver <br> • Communicates with ESP32-CAM via UART <br> • Runs navigation and PID control logic |
-| ![RPLiDARA1M8](v-photos/RPLiDARA1M8.jpg) | **RPLiDAR A1M8** | • 360° laser distance scanner <br> • Primary perception sensor for wall following <br> • Detects corners, open spaces and obstacles <br> • Connected to ESP32-C6 via UART (TX/RX) <br> • Powered at 5V from LM2596 |
-| ![ESP32-CAM](v-photos/ESP32-CAM.jpg) | **ESP32-CAM** | • Handles visual color detection <br> • Identifies red and green traffic sign pillars <br> • Sends color decisions to ESP32-C6 via UART <br> • Used exclusively during the Obstacle Challenge |
-| ![TB6612FNG](v-photos/TB6612FNG.jpg) | **TB6612FNG Motor Driver** | • Controls Pololu DC motor speed and direction <br> • Accepts PWM + direction signals from ESP32-C6 <br> • Powered directly from LiPo at 7.4V <br> • Protects ESP32 from motor current draw |
-| ![Pololu](v-photos/Pololu.jpg) | **Pololu DC Motor 300 RPM** | • Rear-wheel drive traction motor <br> • Connected to rear axle through physical gear system <br> • Speed controlled via PWM through TB6612FNG <br> • Single motor drives both rear wheels |
-| ![Servo](v-photos/Servo.jpg) | **MG90 Micro Servo** | • Controls front steering mechanism <br> • Physical range: 40° (full left) to 140° (full right) <br> • Center position at 90° = straight ahead <br> • PWM signal from ESP32-C6 GPIO 0 |
-| ![LM2596](v-photos/LM2596.jpg) | **LM2596 Step-Down Regulator** | • Converts 7.4V LiPo down to stable 5V <br> • Powers all logic components safely <br> • Prevents voltage damage to ESP32 and LiDAR <br> • Adjustable output verified before use |
-| ![LiPo](v-photos/LiPo.jpg) | **LiPo Battery 7.4V** | • Main power source for the entire system <br> • Directly feeds motor driver at full voltage <br> • Feeds LM2596 for 5V logic rail <br> • Lightweight for weight-sensitive robot design |
-| ![Switch](v-photos/Switch.jpg) | **Power Switch** | • Master on/off switch for the entire system <br> • Required by WRO rules (one switch to power on) <br> • Cuts all power from battery before start |
-| ![IMU](v-photos/IMU.jpg) | **IMU Sensor** | • Inertial measurement unit <br> • Provides heading and orientation data <br> • Supports navigation during turns <br> • Connected via I2C (SDA/SCL) to ESP32-C6 |
+|:-----------:|-----------|-------------|
+| <div align="center"><img src="v-photos/XIAOESP32-C6.jpg" width="200" height="200"></div> | **XIAO ESP32-C6** | • Main microcontroller of the robot <br> • Processes RPLiDAR distance data <br> • Controls steering servo and motor driver <br> • Communicates with ESP32-CAM via UART <br> • Runs navigation and PID control logic |
+| <div align="center"><img src="v-photos/RPLiDARA1M8.jpg" width="200" height="200"></div> | **RPLiDAR A1M8** | • 360° laser distance scanner <br> • Primary perception sensor for wall following <br> • Detects corners, open spaces and obstacles <br> • Connected to ESP32-C6 via UART (TX/RX) <br> • Powered at 5V from LM2596 |
+| <div align="center"><img src="v-photos/ESP32-CAM.jpg" width="200" height="200"></div> | **ESP32-CAM** | • Handles visual color detection <br> • Identifies red and green traffic sign pillars <br> • Sends color decisions to ESP32-C6 via UART <br> • Used exclusively during the Obstacle Challenge |
+| <div align="center"><img src="v-photos/TB6612FNG.jpg" width="200" height="200"></div> | **TB6612FNG Motor Driver** | • Controls Pololu DC motor speed and direction <br> • Accepts PWM + direction signals from ESP32-C6 <br> • Powered directly from LiPo at 7.4V <br> • Protects ESP32 from motor current draw |
+| <div align="center"><img src="v-photos/Pololu.jpg" width="200" height="200"></div> | **Pololu DC Motor 300 RPM** | • Rear-wheel drive traction motor <br> • Connected to rear axle through physical gear system <br> • Speed controlled via PWM through TB6612FNG <br> • Single motor drives both rear wheels |
+| <div align="center"><img src="v-photos/Servo.jpg" width="200" height="200"></div> | **MG90 Micro Servo** | • Controls front steering mechanism <br> • Physical range: 40° (full left) to 140° (full right) <br> • Center position at 90° = straight ahead <br> • PWM signal from ESP32-C6 GPIO 0 |
+| <div align="center"><img src="v-photos/LM2596.jpg" width="200" height="200"></div> | **LM2596 Step-Down Regulator** | • Converts 7.4V LiPo down to stable 5V <br> • Powers all logic components safely <br> • Prevents voltage damage to ESP32 and LiDAR <br> • Adjustable output verified before use |
+| <div align="center"><img src="v-photos/LiPo.jpg" width="200" height="200"></div> | **LiPo Battery 7.4V** | • Main power source for the entire system <br> • Directly feeds motor driver at full voltage <br> • Feeds LM2596 for 5V logic rail <br> • Lightweight for weight-sensitive robot design |
+| <div align="center"><img src="v-photos/Switch.jpg" width="200" height="200"></div> | **Power Switch** | • Master on/off switch for the entire system <br> • Required by WRO rules (one switch to power on) <br> • Cuts all power from battery before start |
+| <div align="center"><img src="v-photos/IMU.jpg" width="200" height="200"></div> | **IMU Sensor** | • Inertial measurement unit <br> • Provides heading and orientation data <br> • Supports navigation during turns <br> • Connected via I2C (SDA/SCL) to ESP32-C6 |
 
 ---
 
