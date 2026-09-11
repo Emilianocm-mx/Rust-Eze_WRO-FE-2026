@@ -5,7 +5,7 @@
 ![Country](https://img.shields.io/badge/Country-Mexico-red)
 ![Lang](https://img.shields.io/badge/Code-C%2B%2B%20%7C%20Python-yellow)
 
-Official repository of team **Rust-eze** for the WRO 2026 Future Engineers category. Here you will find the source code, technical documentation, hardware schematics, and multimedia material of our autonomous robot.
+Official repository of team **Rust-eze** for the WRO 2026 Future Engineers category. Here you will find the source code of our robot, technical documentation, hardware schematics, and multimedia material from our autonomous robot.
 
 ---
 
@@ -70,6 +70,7 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 ---
 
 ## ⚡ Electrical System
+![Electronic Scheme](schemes/Electronic_Scheme.jpg)
 
 ### Power Architecture
 
@@ -91,8 +92,7 @@ Pololu Motor        ▼      ▼          ▼
 ```
 ---
 ### Wiring Diagram
-
-![Electronic Scheme](schemes/Electronic_Scheme.jpg)
+<img width="1024" height="723" alt="image" src="https://github.com/user-attachments/assets/959afa32-fa0c-43f0-8441-2c4025aa1184" />
 
 ---
 
