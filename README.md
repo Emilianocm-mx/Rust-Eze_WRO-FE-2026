@@ -68,6 +68,35 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 
 
 ---
+## ⚙️ Mechanical Design Process
+
+Our mechanical design focuses on stability, , and precise maneuverability to tackle the high-speed requirements of the WRO Future Engineers challenges. The entire robot was designed from scratch using CAD software and manufactured via 3D printing.
+
+### 1. Chassis & Weight Distribution
+* **Material:** Printed in PLA/PETG for a great balance between rigidity and lightweight performance.
+* **Low Center of Gravity:** Heavy components, such as the LiPo battery and the Pololu motor, are mounted as low as possible to prevent the robot from tipping over during sharp corners.
+* **Modular Design:** The chassis is divided into easily replaceable sections (front steering assembly, main body, and rear drivetrain) to allow quick repairs during competition days. Also, our CAD desing is basically 2 pieces that consist of a top_cover and main_chassis with each mechanisism working independently.
+
+### 2. Steering System (Ackermann Geometry)
+To ensure smooth cornering and minimize tire scrubbing, we implemented an **Ackermann steering mechanism** which is the same type that comercial cars use.
+* Actuated by the **MG90 Micro Servo**, the M2 screws ensure that the inner wheel turns at a sharper angle than the outer wheel.
+* This geometry is critical for maintaining traction and speed while navigating the tight turns of the Open Challenge track.
+
+### 3. Drivetrain & Transmission
+* **Rear-Wheel Drive (RWD):** Driven by a single **Pololu 300 RPM DC Motor**. While it was not the fist motor we used, the different design itterations helped us find the perfect motor to power out robot. 
+* **Power Transfer:** We designed a custom structure with bearings in order to use the lego differential (pieces 65413 and 65414) connecting the motor to the solid rear axle. This gear ratio was calculated to provide the perfect balance between top speed on the straightaways and high torque for the Obstacle Challenge maneuvers (like parallel parking).
+
+### 4. Sensor Integration
+* **RPLiDAR Tower:** Elevated and centrally mounted to guarantee a 360° unobstructed field of view, preventing any chassis parts from creating blind spots. It is mounted with M2.5 screws with perfectly designed holes in the cassis.
+* **Camera Mount:** The ESP32-CAM is mounted in front of the robot with a simple slot on the cassis so that it can be taken out easily but without compromising stability.
+
+### 🔄 Design Iterations
+
+| Version | Focus Area | Key Improvements |
+|---------|------------|------------------|
+| **V1.0** | Proof of Concept | Basic flat plate chassis; direct-drive steering test. |
+| **V2.0** | Steering Optimization | Implemented Ackermann geometry; reinforced servo mounts. |
+| **V3.0** | WRO Final Frame | Optimized weight distribution; streamlined sensor towers to reduce total footprint. |
 
 ## ⚡ Electrical System
 ![Electronic Scheme](schemes/Electronic_Scheme.jpg)
