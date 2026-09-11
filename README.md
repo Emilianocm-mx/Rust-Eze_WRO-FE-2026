@@ -201,7 +201,7 @@ Insert the LiPo battery, flip the power switch, and verify all systems initializ
 
 | Team | Paco | Emi | Oliver |
 |:---:|:---:|:---:|:---:|
-|<div align="center"><img src="v-photos/Team.jpg" width="400" height="700"></div>) |<div align="center"><img src="v-photos/FranciscoCastillo.jpeg" width="400" height="700"></div>) |<div align="center"><img src="v-photos/EmilianoCanche.jpeg" width="400" height="700"></div>) |<div align="center"><img src="v-photos/OliverMascareno.jpeg" width="400" height="700"></div>) 
+|<div align="center"><img src="v-photos/Team.jpg" width="400" height="700"></div>) |<div align="center"><img src="v-photos/FranciscoCastillo.jpeg" width="400" height="700"></div>) |<div align="center"><img src="v-photos/EmilianoCanche.jpeg" width="400" height="700"></div>) |<div align="center"><img src="v-photos/OliverMascareno.jpeg" width="400" height="700"></div>) |
 
 
 
