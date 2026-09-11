@@ -223,7 +223,7 @@ Insert the LiPo battery, flip the power switch, and verify all systems initializ
 
 | Team | Paco | Emi | Oliver |
 |:---:|:---:|:---:|:---:|
-| ![Team](t-photos/Equipo.jpeg) | ![Paco](t-photos/Paco.jpeg) | ![Emi](t-photos/Emi.jpeg) | ![Oliver](t-photos/Oliver.jpeg) |
+| ![Team](t-photos/Equipo.jpeg) | ![Paco](t-photos/FrancisoCastillo.jpeg) | ![Emi](t-photos/EmilianoCanche.jpeg) | ![Oliver](t-photos/OliverMascareño.jpeg) |
 
 ---
 
