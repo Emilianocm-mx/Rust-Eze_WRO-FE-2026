@@ -123,7 +123,7 @@ Pololu Motor        ▼      ▼          ▼
 | Component | Description |
 |-----------|-------------|
 | ![XIAO ESP32-C6](v-photos/XIAOESP32-C6.jpg) | **XIAO ESP32-C6** | • Main microcontroller of the robot <br> • Processes RPLiDAR distance data <br> • Controls steering servo and motor driver <br> • Communicates with ESP32-CAM via UART <br> • Runs navigation and PID control logic |
-| ![Front](v-photos/Front.jpeg) | **RPLiDAR A1M8** | • 360° laser distance scanner <br> • Primary perception sensor for wall following <br> • Detects corners, open spaces and obstacles <br> • Connected to ESP32-C6 via UART (TX/RX) <br> • Powered at 5V from LM2596 |
+| ![RPLiDARA1M8](v-photos/RPLiDARA1M8.jpg) | **RPLiDAR A1M8** | • 360° laser distance scanner <br> • Primary perception sensor for wall following <br> • Detects corners, open spaces and obstacles <br> • Connected to ESP32-C6 via UART (TX/RX) <br> • Powered at 5V from LM2596 |
 | ![Front](v-photos/Front.jpeg) | **ESP32-CAM** | • Handles visual color detection <br> • Identifies red and green traffic sign pillars <br> • Sends color decisions to ESP32-C6 via UART <br> • Used exclusively during the Obstacle Challenge |
 | ![Front](v-photos/Front.jpeg) | **TB6612FNG Motor Driver** | • Controls Pololu DC motor speed and direction <br> • Accepts PWM + direction signals from ESP32-C6 <br> • Powered directly from LiPo at 7.4V <br> • Protects ESP32 from motor current draw |
 | ![Front](v-photos/Front.jpeg) | **Pololu DC Motor 300 RPM** | • Rear-wheel drive traction motor <br> • Connected to rear axle through physical gear system <br> • Speed controlled via PWM through TB6612FNG <br> • Single motor drives both rear wheels |
