@@ -59,12 +59,12 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
              └─────────────┘
 ```
 ---
-```
+
 
 
 ## 📁 Repository Structure
 
-```
+
 
 
 ---
