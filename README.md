@@ -23,6 +23,7 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 ## 🏗️ System Architecture
 
 ```
+
                     ┌──────────────────────┐
                     │     XIAO ESP32-C6    │
                     │   Main Controller    │
@@ -57,37 +58,13 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
              │ Drive Motor │
              └─────────────┘
 ```
-
+```
 ---
 
 ## 📁 Repository Structure
 
 ```
-Rust-Eze_WRO-FE-2026/
-├── src/
-│   └── main/
-│       ├── main.cpp          # Motor and servo control on ESP32-C6 (C++/Arduino)
-│       └── navigation.py     # LiDAR-based navigation (Python)
-├── schemes/
-│   └── Esquema_electronica.jpg  # Full wiring diagram
-├── docs/
-│   └── engineering-journal.md
-├── t-photos/                 # Team photos
-│   ├── Equipo.jpeg
-│   ├── Paco.jpeg
-│   ├── Emi.jpeg
-│   └── Oliver.jpeg
-├── v-photos/                 # Vehicle photos
-│   ├── Front.jpeg
-│   ├── Front_2.jpeg
-│   ├── Left.jpeg
-│   ├── Right.jpeg
-│   └── Top.jpeg
-├── video/
-│   └── Video1_SinObs.mp4     # Demo — open challenge round
-├── models/                   # 3D printable chassis files
-└── requirements.txt
-```
+
 
 ---
 
@@ -223,7 +200,7 @@ Insert the LiPo battery, flip the power switch, and verify all systems initializ
 
 | Team | Paco | Emi | Oliver |
 |:---:|:---:|:---:|:---:|
-|<div align="center"><img src="v-photos/XIAOESP32-C6.jpg" width="250" height="250"></div>) | <div align="center"><img src="t-photos/FrancisoCastillo.jpeg" width="250" height="250"></div>|<div align="center"><img src="t-photos/FrancisoCastillo.jpeg" width="250" height="250"></div> | <div align="center"><img src="t photos/FrancisoCastillo.jpeg" width="250" height="250"></div> |
+|<div align="center"><img src="v-photos/Team.jpg" width="250" height="250"></div>) | <div align="center"><img src="t-photos/FrancisoCastillo.jpeg" width="250" height="250"></div>|<div align="center"><img src="t-photos/EmilianoCanche.jpeg" width="250" height="250"></div> | <div align="center"><img src="t photos/OliverMascareño.jpeg" width="250" height="250"></div> |
 
 
 
