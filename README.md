@@ -111,7 +111,7 @@ Pololu Motor        ▼      ▼          ▼
                ESP32-C6  RPLiDAR  ESP32-CAM
 ```
 ---
-### Wiring Diagram
+## Wiring Diagram
 <img width="1024" height="723" alt="image" src="https://github.com/user-attachments/assets/959afa32-fa0c-43f0-8441-2c4025aa1184" />
 
 ---
