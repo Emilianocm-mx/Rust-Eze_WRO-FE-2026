@@ -87,7 +87,7 @@ Our mechanical design focuses on stability, , and precise maneuverability to tac
 * **Low Center of Gravity:** Heavier components, such as the LiPo battery and the Pololu motor, are mounted as low as possible to prevent the robot from tipping over during sharp corners.
 * **Modular Design:** The chassis is divided into easily replaceable sections (front steering assembly, main body, and rear drivetrain) to allow quick repairs during competition days. Also, our CAD desing is basically 2 pieces that consist of a top_cover and main_chassis with each mechanisism working independently.
 
-| Top | Chasis |
+| Top | Chassis |
 |:---:|:---:|
 | <div align="center"><img src="v-photos/top.png" width="550" height="550"></div> | <div align="center"><img src="v-photos/chasis.png" width="550" height="550"></div> |
 
@@ -98,7 +98,7 @@ To ensure smooth cornering and minimize tire scrubbing, we implemented an **Acke
 * Actuated by the **MG90 Micro Servo**, the M2 screws ensure that the inner wheel turns at a sharper angle than the outer wheel.
 * This geometry is critical for maintaining traction and speed while navigating the tight turns of the Open Challenge track.
 
-| Top | Chasis |
+| Our Steering | Ackermann Steering Formula |
 |:---:|:---:|
 | <div align="center"><img src="v-photos/stearing.png" width="550" height="550"></div> | <div align="center"><img src="v-photos/ackermann_steering.png" width="550" height="550"></div> |
 
