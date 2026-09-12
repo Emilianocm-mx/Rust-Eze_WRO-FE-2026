@@ -10,24 +10,18 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 ---
 
 ## 📑 Table of contents
+
 <nav>
-    <p> </p>
-    - <a href="#contacto">Contacto</a>  
+    - <a href="#Team">Team</a>
+    - <a href="#Vehicle-Photos">Vehicle Photos</a>
+    - <a href="#Mechanical-Design-Process">Mechanical Design Process</a>
+    - <a href="Electrical-System">Electrical System</a>
+    - <a href="#Wiring-Diagram">Wiring Diagram</a>
+    - <a href="#Components">Components</a>
+    - <a href="#Source-Code">Source Code</a>
+    - <a href="#Build-&-Setup">Build & Setup</a>
     - <a href="#Team-Photos">Team-Photos</a>
   </nav>
-
-
-- [Team](#-Team)
-- [Vehicle Photos](#-Vehicle-Photos)
-- [Mechanical Design Process](#-Mechanical-Design)
-- [Electrical System](#-Electrical-System)
-- [Wiring Diagram](#-wiring-diagram)
-- [Components](#-Components)
-- [Source Code](#-Source-Code)
-- [Build & Setup](#-Build-&-Setup)
-- [Team Photos](#-Team-Photos)
-
-
 
 ---
 
@@ -211,6 +205,7 @@ Insert the LiPo battery, flip the power switch, and verify all systems initializ
 
 ---
 <section id="Team-Photos">
+    
 ## 👕 Team Photos 
 
 | Team | Paco | Emi | Oliver |
