@@ -79,7 +79,7 @@ To ensure smooth cornering and minimize tire scrubbing, we implemented an **Acke
 
 ### 4. Sensor Integration
 * **RPLiDAR Tower:** Elevated and centrally mounted to guarantee a 360° unobstructed field of view, preventing any chassis parts from creating blind spots. It is mounted with M2.5 screws with perfectly designed holes in the cassis.
-* **Camera Mount:** The ESP32-CAM is mounted in front of the robot with a simple slot on the cassis so that it can be taken out easily but without compromising stability.
+* **Camera Mount:** The ESP32-CAM is mounted in front of the robot with a simple slot on the cassis so that it can still be taken out easily without compromising stability.
 
 ### 🔄 Design Iterations
 
