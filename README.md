@@ -88,7 +88,7 @@ Our mechanical design focuses on stability, , and precise maneuverability to tac
 * **Modular Design:** The chassis is divided into easily replaceable sections (front steering assembly, main body, and rear drivetrain) to allow quick repairs during competition days. Also, our CAD desing is basically 2 pieces that consist of a top_cover and main_chassis with each mechanisism working independently.
 
 
-|------|------|
+|:---:|:---:|
 | <div align="center"><img src="v-photos/XIAOESP32-C6.jpg" width="150" height="150"></div> | <div align="center"><img src="v-photos/XIAOESP32-C6.jpg" width="150" height="150"></div> | | |
 
 
