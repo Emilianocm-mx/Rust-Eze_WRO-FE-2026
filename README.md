@@ -20,11 +20,12 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
     - <a href="#Components">Components</a><br>
     - <a href="#Source-Code">Source Code</a><br>
     - <a href="#Build-&-Setup">Build & Setup</a><br>
-    - <a href="#Team-Photos">Team-Photos</a><br>
+    - <a href="#Team-Photos">Team Photos</a><br>
   </nav>
 
 ---
-
+<section id="Team">
+    
 ## 👥 Team
 
 | Name | Role |
@@ -35,6 +36,7 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 | Leo | Coach |
 
 ---
+<section id="Vehicle-Photos">
 
 ## 📷 Vehicle Photos
 
@@ -45,7 +47,8 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 | ![Right](v-photos/Right.jpeg) | ![Top](v-photos/Top.jpeg) | ![Isometric](v-photos/Isometric.jpg) |
 
 ---
-
+<section id="Mechanical-Design-Process">
+    
 ## ⚙️ Mechanical Design Process
 
 Our mechanical design focuses on stability, , and precise maneuverability to tackle the high-speed requirements of the WRO Future Engineers challenges. The entire robot was designed from scratch using CAD software and manufactured via 3D printing.
@@ -87,6 +90,8 @@ To ensure smooth cornering and minimize tire scrubbing, we implemented an **Acke
 | **V2.0** | Steering Optimization | Implemented Ackermann geometry, with a MG90 servo in order to provide more torque for our robot. |
 | **V3.0** | Final Frame | We changed to lighter components (XIAO C6 and LiPo battery) so our final chassis ended up being more sturdy and easy to assemble then at the beggining. |
 
+<section id="Vehicle-Photos">
+    
 ## ⚡ Electrical System
 ![Electronic Scheme](schemes/Electronic_Scheme.jpg)
 
@@ -113,7 +118,8 @@ Pololu Motor        ▼      ▼          ▼
 <img width="1024" height="723" alt="image" src="https://github.com/user-attachments/assets/959afa32-fa0c-43f0-8441-2c4025aa1184" />
 
 ---
-
+<section id="Vehicle-Photos">
+    
 ## 🛠️ Components
 
 | Photo | Component | Description |
@@ -146,7 +152,8 @@ Pololu Motor        ▼      ▼          ▼
 | IMU SCL | GPIO 7 | I2C clock |
 
 ---
-
+<section id="Vehicle-Photos">
+    
 ## 💻 Source Code
 
 The main program runs on the **XIAO ESP32-C6**, which receives RPLiDAR distance data, processes it for navigation decisions, and controls both the steering servo and drive motor.
@@ -183,7 +190,8 @@ Same wall-following base as the Open Challenge, with the addition of the ESP32-C
 | Max points | 30 | 62 |
 
 ---
-
+<section id="Vehicle-Photos">
+    
 ## 🔧 Build & Setup
 
 ### 1. 🖨️ Print the chassis
