@@ -127,7 +127,7 @@ Pololu Motor        ▼      ▼          ▼
 | <div align="center"><img src="v-photos/Pololu.jpg" width="250" height="250"></div> | **Pololu DC Motor 300 RPM** | • Rear-wheel drive traction motor <br> • Connected to rear axle through physical gear system <br> • Speed controlled via PWM through TB6612FNG <br> • Single motor drives both rear wheels |
 | <div align="center"><img src="v-photos/Servo.jpg" width="250" height="250"></div> | **MG90 Micro Servo** | • Controls front steering mechanism <br> • Physical range: 40° (full left) to 140° (full right) <br> • Center position at 90° = straight ahead <br> • PWM signal from ESP32-C6 GPIO 0 |
 | <div align="center"><img src="v-photos/LM2596.jpg" width="250" height="250"></div> | **LM2596 Step-Down Regulator** | • Converts 7.4V LiPo down to stable 5V <br> • Powers all logic components safely <br> • Prevents voltage damage to ESP32 and LiDAR <br> • Adjustable output verified before use |
-| <div align="center"><img src="v-photos/LiPo.jpg" width="250" height="250"></div> | **LiPo Battery 7.4V** | • Main power source for the entire system <br> • Directly feeds motor driver at full voltage <br> • Feeds LM2596 for 5V logic rail <br> • Lightweight for weight-sensitive robot design |
+| <div align="center"><img src="v-photos/LiPo.jpg" width="250" height="250"></div> | **LiPo Battery 7.4V 800mAh** | • Main power source for the entire system <br> • Directly feeds motor driver at full voltage <br> • Feeds LM2596 for 5V logic rail <br> • Lightweight for weight-sensitive robot design |
 | <div align="center"><img src="v-photos/Switch.jpg" width="250" height="250"></div> | **Power Switch** | • Master on/off switch for the entire system <br> • Required by WRO rules (one switch to power on) <br> • Cuts all power from battery before start |
 | <div align="center"><img src="v-photos/IMU.jpg" width="250" height="250"></div> | **IMU Sensor** | • Inertial measurement unit <br> • Provides heading and orientation data <br> • Supports navigation during turns <br> • Connected via I2C (SDA/SCL) to ESP32-C6 |
 
@@ -225,5 +225,5 @@ Insert the LiPo battery, flip the power switch, and verify all systems initializ
 |-----------|------|
 | Open Challenge — No obstacles | [Watch](video/Video1_SinObs.mp4) |
 | Obstacle Challenge | *Coming soon* |
-
+---
 - [Go to top](#-Rust-eze)
