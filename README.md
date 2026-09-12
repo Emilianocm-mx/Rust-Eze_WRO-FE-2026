@@ -12,7 +12,7 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 ## 📑 Table of contents
 
 <nav>
-    - <a href="#Team">Team</a>
+    - <a href="#Team">Team</a><br>
     - <a href="#Vehicle-Photos">Vehicle Photos</a>
     - <a href="#Mechanical-Design-Process">Mechanical Design Process</a>
     - <a href="Electrical-System">Electrical System</a>
