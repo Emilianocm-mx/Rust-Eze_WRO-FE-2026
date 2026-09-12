@@ -13,14 +13,14 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 
 <nav>
     - <a href="#Team">Team</a><br>
-    - <a href="#Vehicle-Photos">Vehicle Photos</a>
-    - <a href="#Mechanical-Design-Process">Mechanical Design Process</a>
-    - <a href="Electrical-System">Electrical System</a>
-    - <a href="#Wiring-Diagram">Wiring Diagram</a>
-    - <a href="#Components">Components</a>
-    - <a href="#Source-Code">Source Code</a>
-    - <a href="#Build-&-Setup">Build & Setup</a>
-    - <a href="#Team-Photos">Team-Photos</a>
+    - <a href="#Vehicle-Photos">Vehicle Photos</a><br>
+    - <a href="#Mechanical-Design-Process">Mechanical Design Process</a><br>
+    - <a href="Electrical-System">Electrical System</a><br>
+    - <a href="#Wiring-Diagram">Wiring Diagram</a><br>
+    - <a href="#Components">Components</a><br>
+    - <a href="#Source-Code">Source Code</a><br>
+    - <a href="#Build-&-Setup">Build & Setup</a><br>
+    - <a href="#Team-Photos">Team-Photos</a><br>
   </nav>
 
 ---
