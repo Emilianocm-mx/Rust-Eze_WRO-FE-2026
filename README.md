@@ -1,4 +1,4 @@
-# 🤖 Rust-eze — WRO 2026 Future Engineers
+## 🤖 Rust-eze — WRO 2026 Future Engineers
 
 ![WRO](https://img.shields.io/badge/WRO-2026-blue)
 ![Category](https://img.shields.io/badge/Category-Future%20Engineers-green)
@@ -8,7 +8,11 @@
 Official repository of team **Rust-eze** for the WRO 2026 Future Engineers category. Here you will find the source code of our robot, technical documentation, hardware schematics, and multimedia material from our autonomous robot.
 
 ---
-
+<nav>
+    <p>Haz clic en una palabra para ir a esa sección:</p>
+    <a href="#contacto">Contacto</a> | 
+    <a href="#servicios">Servicios</a>
+  </nav>
 
 
 ## 📑 Table of contents
@@ -216,7 +220,7 @@ Insert the LiPo battery, flip the power switch, and verify all systems initializ
 
 
 
-
+<section id="contacto">
 ---
 
 ## 🎬 Videos
