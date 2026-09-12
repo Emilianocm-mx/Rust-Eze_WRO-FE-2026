@@ -15,7 +15,7 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 
 - [Nuestro Robot](#-nuestro-robot)
 - [Código fuente](#-código-fuente)
-- [Team Photos](#-TeamPhotos)
+- [Team Photos](#-Team-Photos)
 
 
 
