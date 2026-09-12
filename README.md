@@ -20,6 +20,16 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 
 ---
 
+## 📷 Vehicle Photos
+
+| Front | Front-2 | Right |
+|:---:|:---:|:---:|
+| ![Front](v-photos/Front.jpeg) | ![Front_2](v-photos/Front_2.jpeg) | ![Left](v-photos/Left.jpeg) |
+| **Right-2** | **Top** | **Isometric** |
+| ![Right](v-photos/Right.jpeg) | ![Top](v-photos/Top.jpeg) | ![Isometric](v-photos/Isometric.jpg) |
+
+---
+
 ## 🏗️ System Architecture
 
 ```
@@ -216,15 +226,6 @@ Insert the LiPo battery, flip the power switch, and verify all systems initializ
 
 ---
 
-## 📷 Vehicle Photos
-
-| Front | Front-2 | Right |
-|:---:|:---:|:---:|
-| ![Front](v-photos/Front.jpeg) | ![Front_2](v-photos/Front_2.jpeg) | ![Left](v-photos/Left.jpeg) |
-| **Right-2** | **Top** | **Isometric** |
-| ![Right](v-photos/Right.jpeg) | ![Top](v-photos/Top.jpeg) | ![Isometric](v-photos/Isometric.jpg) |
-
----
 
 ## 👕 Team Photos
 
