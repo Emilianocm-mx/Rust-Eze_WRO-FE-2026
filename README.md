@@ -100,7 +100,7 @@ To ensure smooth cornering and minimize tire scrubbing, we implemented an **Acke
 
 | Our Steering | Ackermann Steering Formula |
 |:---:|:---:|
-| <div align="center"><img src="v-photos/stearing.png" width="550" height="550"></div> | <div align="center"><img src="v-photos/ackermann_steering.png" width="550" height="550"></div> |
+| <div align="center"><img src="v-photos/stearing.png" width="550" height="550"></div> | <div align="center"><img src="v-photos/ackermann_steering.png" width="450" height="450"></div> |
 
 
 ### 3. Drivetrain & Transmission
