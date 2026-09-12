@@ -42,46 +42,6 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 
 ---
 
-## 🏗️ System Architecture
-
-```
-
-                    ┌──────────────────────┐
-                    │     XIAO ESP32-C6    │
-                    │   Main Controller    │
-                    └──────────┬───────────┘
-                               │
-         ┌─────────────────────┼─────────────────────┐
-         │                     │                     │
-         ▼                     ▼                     ▼
-   ┌───────────┐         ┌───────────┐         ┌───────────┐
-   │  RPLiDAR  │         │ ESP32-CAM │         │  MG90     │
-   │   A1M8    │         │           │         │  Servo    │
-   │ Distance  │         │  Color    │         │ Steering  │
-   └───────────┘         └───────────┘         └───────────┘
-         │                     │
-         └──────────┬──────────┘
-                    │
-                    ▼
-             ┌─────────────┐
-             │  Navigation │
-             │    Logic    │
-             └──────┬──────┘
-                    │
-                    ▼
-             ┌─────────────┐
-             │ TB6612FNG   │
-             │ Motor Driver│
-             └──────┬──────┘
-                    │
-                    ▼
-             ┌─────────────┐
-             │Pololu 300RPM│
-             │ Drive Motor │
-             └─────────────┘
-```
-
----
 ## ⚙️ Mechanical Design Process
 
 Our mechanical design focuses on stability, , and precise maneuverability to tackle the high-speed requirements of the WRO Future Engineers challenges. The entire robot was designed from scratch using CAD software and manufactured via 3D printing.
