@@ -89,7 +89,7 @@ Our mechanical design focuses on stability, , and precise maneuverability to tac
 
 
 
-| <div align="center"><img src="v-photos/XIAOESP32-C6.jpg" width="150" height="150"></div> | <div align="center"><img src="v-photos/XIAOESP32-C6.jpg" width="150" height="150"></div> |
+| <div align="center"><img src="v-photos/XIAOESP32-C6.jpg" width="350" height="350"></div> | <div align="center"><img src="v-photos/XIAOESP32-C6.jpg" width="150" height="150"></div> |
 |:---:|:---:|
 
 
