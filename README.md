@@ -65,8 +65,8 @@ Our mechanical design focuses on stability, , and precise maneuverability to tac
 
 ### 2. Steering System (Ackermann Geometry)
 To ensure smooth cornering and minimize tire scrubbing, we implemented an **Ackermann steering mechanism** which is the same type that comercial cars use.
-* Actuated by the **MG90 Micro Servo**, the M2 screws ensure that the inner wheel turns at a sharper angle than the outer wheel.
-* This geometry is critical for maintaining traction and speed while navigating the tight turns of the Open Challenge track.
+* Actuated by the **MG90 Micro Servo** and a steering system assembled with 3 M2 screws ensure that our ackermann the type steering can work efficiently at all times.
+* This geometry is critical for maintaining traction and speed while navigating the tight turns of the challenge in general.
 
 | Our Steering | Ackermann Steering Formula |
 |:---:|:---:|
