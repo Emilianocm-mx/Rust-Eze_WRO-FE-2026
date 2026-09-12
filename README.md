@@ -11,21 +11,18 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 
 ## 📑 Table of contents
 
-<nav>
-    - <a href="#Team">Team</a><br>
-    - <a href="#Vehicle-Photos">Vehicle Photos</a><br>
-    - <a href="#Mechanical-Design-Process">Mechanical Design Process</a><br>
-    - <a href="Electrical-System">Electrical System</a><br>
-    - <a href="#Wiring-Diagram">Wiring Diagram</a><br>
-    - <a href="#Components">Components</a><br>
-    - <a href="#Source-Code">Source Code</a><br>
-    - <a href="#Build-&-Setup">Build & Setup</a><br>
-    - <a href="#Team-Photos">Team Photos</a><br>
-  </nav>
+* [👥 Team](#-team)
+* [📷 Vehicle Photos](#-vehicle-photos)
+* [⚙️ Mechanical Design Process](#️-mechanical-design-process)
+* [⚡ Electrical System](#-electrical-system)
+* [Wiring Diagram](#wiring-diagram)
+* [🛠️ Components](#️-components)
+* [💻 Source Code](#-source-code)
+* [🔧 Build & Setup](#-build--setup)
+* [👕 Team Photos](#-team-photos)
 
 ---
-<section id="Team">
-    
+
 ## 👥 Team
 
 | Name | Role |
@@ -36,7 +33,6 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 | Leo | Coach |
 
 ---
-<section id="Vehicle-Photos">
 
 ## 📷 Vehicle Photos
 
@@ -47,8 +43,7 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 | ![Right](v-photos/Right.jpeg) | ![Top](v-photos/Top.jpeg) | ![Isometric](v-photos/Isometric.jpg) |
 
 ---
-<section id="Mechanical-Design-Process">
-    
+
 ## ⚙️ Mechanical Design Process
 
 Our mechanical design focuses on stability, , and precise maneuverability to tackle the high-speed requirements of the WRO Future Engineers challenges. The entire robot was designed from scratch using CAD software and manufactured via 3D printing.
@@ -90,8 +85,8 @@ To ensure smooth cornering and minimize tire scrubbing, we implemented an **Acke
 | **V2.0** | Steering Optimization | Implemented Ackermann geometry, with a MG90 servo in order to provide more torque for our robot. |
 | **V3.0** | Final Frame | We changed to lighter components (XIAO C6 and LiPo battery) so our final chassis ended up being more sturdy and easy to assemble then at the beggining. |
 
-<section id="Vehicle-Photos">
-    
+---
+
 ## ⚡ Electrical System
 ![Electronic Scheme](schemes/Electronic_Scheme.jpg)
 
@@ -99,27 +94,26 @@ To ensure smooth cornering and minimize tire scrubbing, we implemented an **Acke
 
 ```
 LiPo Battery 7.4V
-       │
-   [Switch]
-       │
-   ┌───┴──────────────────┐
-   │                      │
-   ▼                      ▼
-TB6612FNG              LM2596
-Motor Driver          Step-down
-  (7.4V)               5V out
-   │                      │
-   ▼               ┌──────┼──────────┐
-Pololu Motor        ▼      ▼          ▼
-               ESP32-C6  RPLiDAR  ESP32-CAM
+        │
+    [Switch]
+        │
+    ┌───┴──────────────────┐
+    │                      │
+    ▼                      ▼
+TB6612FNG                LM2596
+Motor Driver           Step-down
+  (7.4V)                5V out
+    │                      │
+    ▼                ┌──────┼──────────┐
+Pololu Motor         ▼      ▼          ▼
+                ESP32-C6  RPLiDAR  ESP32-CAM
 ```
 ---
 ## Wiring Diagram
 <img width="1024" height="723" alt="image" src="https://github.com/user-attachments/assets/959afa32-fa0c-43f0-8441-2c4025aa1184" />
 
 ---
-<section id="Vehicle-Photos">
-    
+
 ## 🛠️ Components
 
 | Photo | Component | Description |
@@ -152,8 +146,7 @@ Pololu Motor        ▼      ▼          ▼
 | IMU SCL | GPIO 7 | I2C clock |
 
 ---
-<section id="Vehicle-Photos">
-    
+
 ## 💻 Source Code
 
 The main program runs on the **XIAO ESP32-C6**, which receives RPLiDAR distance data, processes it for navigation decisions, and controls both the steering servo and drive motor.
@@ -190,8 +183,7 @@ Same wall-following base as the Open Challenge, with the addition of the ESP32-C
 | Max points | 30 | 62 |
 
 ---
-<section id="Vehicle-Photos">
-    
+
 ## 🔧 Build & Setup
 
 ### 1. 🖨️ Print the chassis
@@ -212,8 +204,7 @@ Connect each microcontroller to a computer and flash the corresponding programs:
 Insert the LiPo battery, flip the power switch, and verify all systems initialize correctly before placing the robot on the track.
 
 ---
-<section id="Team-Photos">
-    
+
 ## 👕 Team Photos 
 
 | Team | Paco | Emi | Oliver |
@@ -233,4 +224,4 @@ Insert the LiPo battery, flip the power switch, and verify all systems initializ
 | Open Challenge — No obstacles | [Watch](video/Video1_SinObs.mp4) |
 | Obstacle Challenge | *Coming soon* |
 ---
-- [Go to top](#-Rust-eze)
+- [Go to top](#-rust-eze--wro-2026-future-engineers)
