@@ -87,10 +87,10 @@ Our mechanical design focuses on stability, , and precise maneuverability to tac
 * **Low Center of Gravity:** Heavier components, such as the LiPo battery and the Pololu motor, are mounted as low as possible to prevent the robot from tipping over during sharp corners.
 * **Modular Design:** The chassis is divided into easily replaceable sections (front steering assembly, main body, and rear drivetrain) to allow quick repairs during competition days. Also, our CAD desing is basically 2 pieces that consist of a top_cover and main_chassis with each mechanisism working independently.
 
-
-
-| <div align="center"><img src="v-photos/XIAOESP32-C6.jpg" width="350" height="350"></div> | <div align="center"><img src="v-photos/XIAOESP32-C6.jpg" width="150" height="150"></div> |
+| Top | Chasis |
 |:---:|:---:|
+| <div align="center"><img src="v-photos/top.png" width="350" height="350"></div> | <div align="center"><img src="v-photos/chasis.png" width="350" height="350"></div> |
+
 
 
 ### 2. Steering System (Ackermann Geometry)
