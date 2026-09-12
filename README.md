@@ -94,9 +94,9 @@ To ensure smooth cornering and minimize tire scrubbing, we implemented an **Acke
 
 | Version | Focus Area | Key Improvements |
 |---------|------------|------------------|
-| **V1.0** | Proof of Concept | Basic flat plate chassis; direct-drive steering test. |
-| **V2.0** | Steering Optimization | Implemented Ackermann geometry; reinforced servo mounts. |
-| **V3.0** | WRO Final Frame | Optimized weight distribution; streamlined sensor towers to reduce total footprint. |
+| **V1.0** | Functionality and weight reduce | Since we used to depend on a RPI and a PWR BANK, the chassis needed to be light and sturdy in order hold up with the weight of this components. |
+| **V2.0** | Steering Optimization | Implemented Ackermann geometry, with a MG90 servo in order to provide more torque for our robot. |
+| **V3.0** | Final Frame | We changed to lighter components (XIAO C6 and LiPo battery) so our final chassis ended up being more sturdy and easy to assemble then at the beggining. |
 
 ## ⚡ Electrical System
 ![Electronic Scheme](schemes/Electronic_Scheme.jpg)
