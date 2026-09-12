@@ -11,10 +11,16 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 
 
 
-## 📑 Índice
+## 📑 Table of contents
 
-- [Nuestro Robot](#-nuestro-robot)
-- [Código fuente](#-código-fuente)
+- [Team](#-Team)
+- [Vehicle Photos](#-Vehicle-Photos)
+- [Mechanical Design Process](#-Mechanical-Design-Process)
+- [Electrical System](#-Electrical-System)
+- [Wiring Diagram](#-Wiring-Diagram)
+- [Components](#-Components)
+- [Source Code](#-Source-Code)
+- [Build & Setup](#-Build-&-Setup)
 - [Team Photos](#-Team-Photos)
 
 
