@@ -225,3 +225,5 @@ Insert the LiPo battery, flip the power switch, and verify all systems initializ
 |-----------|------|
 | Open Challenge — No obstacles | [Watch](video/Video1_SinObs.mp4) |
 | Obstacle Challenge | *Coming soon* |
+
+- [Go to top](#-Rust-eze)
