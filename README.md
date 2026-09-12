@@ -9,6 +9,18 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 
 ---
 
+
+
+## 📑 Índice
+
+- [Nuestro Robot](#-nuestro-robot)
+- [Código fuente](#-código-fuente)
+- [Team Photos](#-TeamPhotos)
+
+
+
+---
+
 ## 👥 Team
 
 | Name | Role |
@@ -68,14 +80,6 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
              │ Drive Motor │
              └─────────────┘
 ```
----
-
-
-
-## 📁 Repository Structure
-
-
-
 
 ---
 ## ⚙️ Mechanical Design Process
