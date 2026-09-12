@@ -74,7 +74,7 @@ Our mechanical design focuses on stability, , and precise maneuverability to tac
 
 ### 1. Chassis & Weight Distribution
 * **Material:** Printed in PLA/PETG for a great balance between rigidity and lightweight performance.
-* **Low Center of Gravity:** Heavy components, such as the LiPo battery and the Pololu motor, are mounted as low as possible to prevent the robot from tipping over during sharp corners.
+* **Low Center of Gravity:** Heavier components, such as the LiPo battery and the Pololu motor, are mounted as low as possible to prevent the robot from tipping over during sharp corners.
 * **Modular Design:** The chassis is divided into easily replaceable sections (front steering assembly, main body, and rear drivetrain) to allow quick repairs during competition days. Also, our CAD desing is basically 2 pieces that consist of a top_cover and main_chassis with each mechanisism working independently.
 
 ### 2. Steering System (Ackermann Geometry)
