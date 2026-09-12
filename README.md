@@ -15,7 +15,7 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 
 - [Team](#-Team)
 - [Vehicle Photos](#-Vehicle-Photos)
-- [Mechanical Design Process](#-MechanicalDesignProcess)
+- [Mechanical Design Process](#-Mechanical-Design-Process)
 - [Electrical System](#-Electrical-System)
 - [Wiring Diagram](#-Wiring-Diagram)
 - [Components](#-Components)
