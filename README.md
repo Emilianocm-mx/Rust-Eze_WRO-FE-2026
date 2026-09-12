@@ -89,7 +89,7 @@ Our mechanical design focuses on stability, , and precise maneuverability to tac
 
 | Top | Chasis |
 |:---:|:---:|
-| <div align="center"><img src="v-photos/top.png" width="350" height="350"></div> | <div align="center"><img src="v-photos/chasis.png" width="350" height="350"></div> |
+| <div align="center"><img src="v-photos/top.png" width="550" height="550"></div> | <div align="center"><img src="v-photos/chasis.png" width="550" height="550"></div> |
 
 
 
