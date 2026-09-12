@@ -8,14 +8,14 @@
 Official repository of team **Rust-eze** for the WRO 2026 Future Engineers category. Here you will find the source code of our robot, technical documentation, hardware schematics, and multimedia material from our autonomous robot.
 
 ---
-<nav>
-    <p>Haz clic en una palabra para ir a esa sección:</p>
-    <a href="#contacto">Contacto</a> | 
-    <a href="#servicios">Servicios</a>
-  </nav>
-
 
 ## 📑 Table of contents
+<nav>
+    <p> </p>
+    - <a href="#contacto">Contacto</a>  
+    - <a href="#Team-Photos">Team-Photos</a>
+  </nav>
+
 
 - [Team](#-Team)
 - [Vehicle Photos](#-Vehicle-Photos)
@@ -210,8 +210,8 @@ Connect each microcontroller to a computer and flash the corresponding programs:
 Insert the LiPo battery, flip the power switch, and verify all systems initialize correctly before placing the robot on the track.
 
 ---
-
-## 👕 Team Photos
+<section id="Team-Photos">
+## 👕 Team Photos 
 
 | Team | Paco | Emi | Oliver |
 |:---:|:---:|:---:|:---:|
@@ -220,7 +220,7 @@ Insert the LiPo battery, flip the power switch, and verify all systems initializ
 
 
 
-<section id="contacto">
+
 ---
 
 ## 🎬 Videos
