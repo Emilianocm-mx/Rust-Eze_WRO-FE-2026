@@ -241,7 +241,6 @@ Insert the LiPo battery, flip the power switch, and verify all systems initializ
 
 ---
 
-[Ir a Team Photos](#-TeamPhotos)
 ## 👕 Team Photos
 
 | Team | Paco | Emi | Oliver |
