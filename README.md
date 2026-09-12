@@ -98,6 +98,11 @@ To ensure smooth cornering and minimize tire scrubbing, we implemented an **Acke
 * Actuated by the **MG90 Micro Servo**, the M2 screws ensure that the inner wheel turns at a sharper angle than the outer wheel.
 * This geometry is critical for maintaining traction and speed while navigating the tight turns of the Open Challenge track.
 
+| Top | Chasis |
+|:---:|:---:|
+| <div align="center"><img src="v-photos/stearing.png" width="550" height="550"></div> | <div align="center"><img src="v-photos/ackermann_steering.png" width="550" height="550"></div> |
+
+
 ### 3. Drivetrain & Transmission
 * **Rear-Wheel Drive (RWD):** Driven by a single **Pololu 300 RPM DC Motor**. While it was not the fist motor we used, the different design itterations helped us find the perfect motor to power out robot. 
 * **Power Transfer:** We designed a custom structure with bearings in order to use the lego differential (pieces 65413 and 65414) connecting the motor to the solid rear axle. This gear ratio was calculated to provide the perfect balance between top speed on the straightaways and high torque for the Obstacle Challenge maneuvers (like parallel parking). We opted for a lego build design due to the risks that a 3D printed one would give us.
