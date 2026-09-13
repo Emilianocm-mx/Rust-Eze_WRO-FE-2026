@@ -49,7 +49,7 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 <a id="mechanical"></a>
 ## ⚙️ Mechanical Design Process
 
-Our mechanical design focuses on stability, and precise maneuverability to tackle the high-speed requirements of the WRO Future Engineers challenges. The entire robot was designed from scratch using CAD software and manufactured via 3D printing.
+Our mechanical design focuses on stability, and precise maneuverability to tackle the high-speed requirements of the WRO Future Engineers challenges. The entire robot was designed from scratch using CAD software and manufactured via 3D printing. CAD:
 
 <img width="1280" height="684" alt="assy" src="https://github.com/user-attachments/assets/9cb5212f-5ba9-4bf2-8bcd-9cad8fd39e7b" />
 
