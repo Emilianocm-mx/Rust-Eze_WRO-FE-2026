@@ -225,7 +225,6 @@ The Obstacle Challenge will extend the Open Challenge base with:
 | Traffic signs | ✗ | ✓ Red & Green pillars |
 | Parking | ✗ | ✓ Parallel parking |
 | Primary sensor | RPLiDAR | RPLiDAR + ESP32-CAM |
-| Max points | 30 | 62 |
 
 ---
 
