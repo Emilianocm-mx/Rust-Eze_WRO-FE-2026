@@ -58,7 +58,7 @@ Our mechanical design focuses on stability, and precise maneuverability to tackl
 
 | Top | Chassis |
 |:---:|:---:|
-| <div align="center"><img src="v-photos/top.png" width="550" height="550"></div> | <div align="center"><img src="v-photos/chasis.png" width="550" height="550"></div> |
+| <div align="center"><img src="07_appendix/top.png" width="550" height="550"></div> | <div align="center"><img src="07_appendix/chasis.png" width="550" height="550"></div> |
 
 
 
