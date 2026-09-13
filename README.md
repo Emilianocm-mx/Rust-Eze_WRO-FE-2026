@@ -40,9 +40,9 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 
 | Front | Front-2 | Right |
 |:---:|:---:|:---:|
-| ![Front](v-photos/Front.jpeg) | ![Front_2](v-photos/Front_2.jpeg) | ![Left](v-photos/Left.jpeg) |
+| ![Front](01_v-photos/Front.jpeg) | ![Front_2](01_v-photos/Front_2.jpeg) | ![Left](01_v-photos/Left.jpeg) |
 | **Right-2** | **Top** | **Isometric** |
-| ![Right](v-photos/Right.jpeg) | ![Top](v-photos/Top.jpeg) | ![Isometric](v-photos/Isometric.jpg) |
+| ![Right](01_v-photos/Right.jpeg) | ![Top](01_v-photos/Top.jpeg) | ![Isometric](01_v-photos/Isometric.jpg) |
 
 ---
 
@@ -69,7 +69,7 @@ To ensure smooth cornering and minimize tire scrubbing, we implemented an **Acke
 
 | Our Steering | Ackermann Steering Formula |
 |:---:|:---:|
-| <div align="center"><img src="v-photos/stearing.png" width="550" height="550"></div> | <div align="center"><img src="v-photos/ackermann_steering.png" width="425" height="425"></div> |
+| <div align="center"><img src="07_appendix/stearing.png" width="550" height="550"></div> | <div align="center"><img src="07_appendix/ackermann_steering.png" width="425" height="425"></div> |
 
 
 ### 3. Drivetrain & Transmission
@@ -125,16 +125,16 @@ Pololu Motor         ▼      ▼          ▼
 
 | Photo | Component | Description |
 |:-----------:|-----------|-------------|
-| <div align="center"><img src="v-photos/XIAOESP32-C6.jpg" width="250" height="250"></div> | **XIAO ESP32-C6** | • Main microcontroller of the robot <br> • Processes RPLiDAR distance data <br> • Controls steering servo and motor driver <br> • Communicates with ESP32-CAM via UART <br> • Runs navigation and PID control logic |
-| <div align="center"><img src="v-photos/RPLiDARA1M8.jpg" width="250" height="250"></div> | **RPLiDAR A1M8** | • 360° laser distance scanner <br> • Primary perception sensor for wall following <br> • Detects corners, open spaces and obstacles <br> • Connected to ESP32-C6 via UART (TX/RX) <br> • Powered at 5V from LM2596 |
-| <div align="center"><img src="v-photos/ESP32-CAM.jpg" width="250" height="250"></div> | **ESP32-CAM** | • Handles visual color detection <br> • Identifies red and green traffic sign pillars <br> • Sends color decisions to ESP32-C6 via UART <br> • Used exclusively during the Obstacle Challenge |
-| <div align="center"><img src="v-photos/TB6612FNG.jpg" width="250" height="250"></div> | **TB6612FNG Motor Driver** | • Controls Pololu DC motor speed and direction <br> • Accepts PWM + direction signals from ESP32-C6 <br> • Powered directly from LiPo at 7.4V <br> • Protects ESP32 from motor current draw |
-| <div align="center"><img src="v-photos/Pololu.jpg" width="250" height="250"></div> | **Pololu DC Motor 300 RPM** | • Rear-wheel drive traction motor <br> • Connected to rear axle through physical gear system <br> • Speed controlled via PWM through TB6612FNG <br> • Single motor drives both rear wheels |
-| <div align="center"><img src="v-photos/Servo.jpg" width="250" height="250"></div> | **MG90 Micro Servo** | • Controls front steering mechanism <br> • Physical range: 40° (full left) to 140° (full right) <br> • Center position at 90° = straight ahead <br> • PWM signal from ESP32-C6 GPIO 0 |
-| <div align="center"><img src="v-photos/LM2596.jpg" width="250" height="250"></div> | **LM2596 Step-Down Regulator** | • Converts 7.4V LiPo down to stable 5V <br> • Powers all logic components safely <br> • Prevents voltage damage to ESP32 and LiDAR <br> • Adjustable output verified before use |
-| <div align="center"><img src="v-photos/LiPo.jpg" width="250" height="250"></div> | **LiPo Battery 7.4V 800mAh** | • Main power source for the entire system <br> • Directly feeds motor driver at full voltage <br> • Feeds LM2596 for 5V logic rail <br> • Lightweight for weight-sensitive robot design |
-| <div align="center"><img src="v-photos/Switch.jpg" width="250" height="250"></div> | **Power Switch** | • Master on/off switch for the entire system <br> • Required by WRO rules (one switch to power on) <br> • Cuts all power from battery before start |
-| <div align="center"><img src="v-photos/IMU.jpg" width="250" height="250"></div> | **BMI160** | • Inertial measurement unit <br> • Provides heading and orientation data <br> • Supports navigation during turns <br> • Connected via I2C (SDA/SCL) to ESP32-C6 |
+| <div align="center"><img src="07_appendix/XIAOESP32-C6.jpg" width="250" height="250"></div> | **XIAO ESP32-C6** | • Main microcontroller of the robot <br> • Processes RPLiDAR distance data <br> • Controls steering servo and motor driver <br> • Communicates with ESP32-CAM via UART <br> • Runs navigation and PID control logic |
+| <div align="center"><img src="07_appendix/RPLiDARA1M8.jpg" width="250" height="250"></div> | **RPLiDAR A1M8** | • 360° laser distance scanner <br> • Primary perception sensor for wall following <br> • Detects corners, open spaces and obstacles <br> • Connected to ESP32-C6 via UART (TX/RX) <br> • Powered at 5V from LM2596 |
+| <div align="center"><img src="07_appendix/ESP32-CAM.jpg" width="250" height="250"></div> | **ESP32-CAM** | • Handles visual color detection <br> • Identifies red and green traffic sign pillars <br> • Sends color decisions to ESP32-C6 via UART <br> • Used exclusively during the Obstacle Challenge |
+| <div align="center"><img src="07_appendix/TB6612FNG.jpg" width="250" height="250"></div> | **TB6612FNG Motor Driver** | • Controls Pololu DC motor speed and direction <br> • Accepts PWM + direction signals from ESP32-C6 <br> • Powered directly from LiPo at 7.4V <br> • Protects ESP32 from motor current draw |
+| <div align="center"><img src="07_appendix/Pololu.jpg" width="250" height="250"></div> | **Pololu DC Motor 300 RPM** | • Rear-wheel drive traction motor <br> • Connected to rear axle through physical gear system <br> • Speed controlled via PWM through TB6612FNG <br> • Single motor drives both rear wheels |
+| <div align="center"><img src="07_appendix/Servo.jpg" width="250" height="250"></div> | **MG90 Micro Servo** | • Controls front steering mechanism <br> • Physical range: 40° (full left) to 140° (full right) <br> • Center position at 90° = straight ahead <br> • PWM signal from ESP32-C6 GPIO 0 |
+| <div align="center"><img src="07_appendix/LM2596.jpg" width="250" height="250"></div> | **LM2596 Step-Down Regulator** | • Converts 7.4V LiPo down to stable 5V <br> • Powers all logic components safely <br> • Prevents voltage damage to ESP32 and LiDAR <br> • Adjustable output verified before use |
+| <div align="center"><img src="07_appendix/LiPo.jpg" width="250" height="250"></div> | **LiPo Battery 7.4V 800mAh** | • Main power source for the entire system <br> • Directly feeds motor driver at full voltage <br> • Feeds LM2596 for 5V logic rail <br> • Lightweight for weight-sensitive robot design |
+| <div align="center"><img src="07_appendix/Switch.jpg" width="250" height="250"></div> | **Power Switch** | • Master on/off switch for the entire system <br> • Required by WRO rules (one switch to power on) <br> • Cuts all power from battery before start |
+| <div align="center"><img src="07_appendix/IMU.jpg" width="250" height="250"></div> | **BMI160** | • Inertial measurement unit <br> • Provides heading and orientation data <br> • Supports navigation during turns <br> • Connected via I2C (SDA/SCL) to ESP32-C6 |
 
 ---
 
@@ -232,20 +232,20 @@ The Obstacle Challenge will extend the Open Challenge base with:
 ## 🔧 Build & Setup
 
 ### 1. 🖨️ Print the chassis
-Download the 3D models from the `models/` folder and print the required parts.
+Download the 3D models from the `models/` folder and print the required parts. We provided a .STEP model of our 
 
 ### 2. ⚙️ Assemble the robot
-Mount the motors, servo, LiDAR, and electronics onto the chassis following the design layout.
+Mount the motors, servo, LiDAR, and electronics onto the chassis following the design layout. We provided images in order to understand where each component goes.
 
 ### 3. 🔌 Wire the electronics
-Follow the wiring diagram at `schemes/Esquema_electronica.jpg` to connect all components.
+Follow the wiring diagrams we provided at `schemes/` to connect all components.
 
 ### 4. 💻 Upload the code
 Connect each microcontroller to a computer and flash the corresponding programs:
-- `src/main/main.cpp` → flash to XIAO ESP32-C6 using Arduino IDE
+- From `src/` → Upload the file named _Open.ino_ to the XIAO ESP32-C6 using Arduino IDE or any other IDE you like.
 
 ### 5. 🔋 Power on and test
-Insert the LiPo battery, flip the power switch, and verify all systems initialize correctly before placing the robot on the track.
+Connect the LiPo battery cables, flip the power switch, and verify all systems initialize correctly. You can now place the robot on the track and press the button in order to initialize the program you want.
 
 ---
 
@@ -254,7 +254,7 @@ Insert the LiPo battery, flip the power switch, and verify all systems initializ
 
 | Team | Paco | Emi | Oliver |
 |:---:|:---:|:---:|:---:|
-| <div align="center"><img src="t-photos/Team.jpg" width="700" height="1000"></div> | <div align="center"><img src="t-photos/FrancisoCastillo.jpeg" width="700" height="1000"></div> | <div align="center"><img src="t-photos/EmilianoCanche.jpeg" width="700" height="1000"></div> | <div align="center"><img src="t-photos/OliverMascareno.jpeg" width="700" height="1000"></div> |
+| <div align="center"><img src="04_t-photos/Team.jpg" width="700" height="1000"></div> | <div align="center"><img src="04_t-photos/FrancisoCastillo.jpeg" width="700" height="1000"></div> | <div align="center"><img src="04_t-photos/EmilianoCanche.jpeg" width="700" height="1000"></div> | <div align="center"><img src="04_t-photos/OliverMascareno.jpeg" width="700" height="1000"></div> |
 
 
 
