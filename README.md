@@ -244,7 +244,6 @@ Follow the wiring diagram at `schemes/Esquema_electronica.jpg` to connect all co
 ### 4. 💻 Upload the code
 Connect each microcontroller to a computer and flash the corresponding programs:
 - `src/main/main.cpp` → flash to XIAO ESP32-C6 using Arduino IDE
-- `src/main/navigation.py` → run on host computer or single-board computer
 
 ### 5. 🔋 Power on and test
 Insert the LiPo battery, flip the power switch, and verify all systems initialize correctly before placing the robot on the track.
