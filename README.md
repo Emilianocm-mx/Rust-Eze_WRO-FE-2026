@@ -94,7 +94,7 @@ To ensure smooth cornering and minimize tire scrubbing, we implemented an **Acke
 
 <a id="electrical"></a>
 ## ⚡ Electrical System
-![Electronic Scheme](02_schemes/Electronic_Scheme.jpg)
+![Electronic Scheme](02_schemes/Electronic_diagram.jpg)
 
 ### Power Architecture
 
