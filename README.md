@@ -71,7 +71,7 @@ We used to have a simple paralel steering in our robot, but as we continued with
 
 | Our Steering | Ackermann Steering Formula |
 |:---:|:---:|
-| <div align="center"><img src="07_appendix/stearing.png" width="550" height="550"></div> | <div align="center"><img src="07_appendix/ackermann_steering.png" width="425" height="425"></div> |
+| <div align="center"><img src="07_appendix/stearing.png" width="425" height="425"></div> | <div align="center"><img src="07_appendix/ackermann_steering.png" width="425" height="425"></div> |
 
 
 ### 3. Drivetrain & Transmission
