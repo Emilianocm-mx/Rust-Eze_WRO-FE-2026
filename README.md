@@ -147,15 +147,15 @@ The main program runs on the **XIAO ESP32-C6**, which processes RPLiDAR distance
 
 ### System Capabilities
 
-- 📡 Reads 360° distance data from the RPLiDAR A1M8 via UART, sampling specific angles as named rays (0°, 60°, 90°, 120°, 170°, 180°, 190°, 240°, 270°, 300°, 340°, 20°)
-- 🧭 Integrates gyroscope data from the BMI160 at 100 Hz to track heading (yaw) with automatic bias calibration at startup
-- 🔄 Runs a **hybrid steering controller**: IMU-based yaw control as primary, with LiDAR wall-following as fallback when IMU is invalid
-- 📏 Maintains a dynamic wall distance setpoint that is captured fresh after each corner, adapting to each corridor without forcing a fixed target
-- ↩️ Detects corners using a multi-condition state machine: front wall blocked + back clear + lateral opening confirmed + opposite wall closed
-- 🔢 Counts completed corners and laps, stopping the motor autonomously after 3 laps (12 corners total)
-- 🔁 Applies **IMU drift correction** continuously during straight sections by comparing wall angle against integrated yaw
-- 🎨 Receives red/green pillar color data from ESP32-CAM via UART with CRC-validated framing (Obstacle Challenge)
-- 🔘 Implements a **two-device start protocol**: the robot waits for a button press signal from the ESP32-CAM before enabling motion, satisfying WRO's one-button start rule without a physical button on the main controller
+- Reads 360° distance data from the RPLiDAR A1M8 via UART, sampling specific angles as named rays (0°, 60°, 90°, 120°, 170°, 180°, 190°, 240°, 270°, 300°, 340°, 20°)
+- Integrates gyroscope data from the BMI160 at 100 Hz to track heading (yaw) with automatic bias calibration at startup
+- Runs a **hybrid steering controller**: IMU-based yaw control as primary, with LiDAR wall-following as fallback when IMU is invalid
+- Maintains a dynamic wall distance setpoint that is captured fresh after each corner, adapting to each corridor without forcing a fixed target
+- Detects corners using a multi-condition state machine: front wall blocked + back clear + lateral opening confirmed + opposite wall closed
+- Counts completed corners and laps, stopping the motor autonomously after 3 laps (12 corners total)
+- Applies **IMU drift correction** continuously during straight sections by comparing wall angle against integrated yaw
+- Receives red/green pillar color data from ESP32-CAM via UART with CRC-validated framing (Obstacle Challenge)
+- Implements a **two-device start protocol**: the robot waits for a button press signal from the ESP32-CAM before enabling motion, satisfying WRO's one-button start rule without a physical button on the main controller
 
 ---
 
@@ -205,7 +205,7 @@ The Obstacle Challenge will extend the Open Challenge base with:
 | LiDAR RX | GPIO 19 | UART data from LiDAR |
 | LiDAR TX | GPIO 16 | UART data to LiDAR |
 | LiDAR motor | GPIO 20 | PWM speed control |
-| Servo MG90 | GPIO 0 | Steering PWM (16-bit LEDC) |
+| Servo MG90 | GPIO 0 | Steering PWM |
 | Motor PWMA | GPIO 22 | Drive motor speed |
 | Motor AIN1 | GPIO 23 | Drive motor direction A |
 | Motor AIN2 | GPIO 2 | Drive motor direction B |
