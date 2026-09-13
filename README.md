@@ -242,17 +242,17 @@ The Obstacle Challenge will extend the Open Challenge base with:
 ## 🔧 Build & Setup
 
 ### 1. 🖨️ Print the chassis
-Download the 3D models from the `models/` folder and print the required parts. We provided a .STEP model of our 
+Download the 3D models from the `01_models/` folder and print the required parts. We provided a .STEP model of our 
 
 ### 2. ⚙️ Assemble the robot
 Mount the motors, servo, LiDAR, and electronics onto the chassis following the design layout. We provided images in order to understand where each component goes.
 
 ### 3. 🔌 Wire the electronics
-Follow the wiring diagrams we provided at `schemes/` to connect all components.
+Follow the wiring diagrams we provided at `02_schemes/` to connect all components.
 
 ### 4. 💻 Upload the code
 Connect each microcontroller to a computer and flash the corresponding programs:
-- From `src/` → Upload the file named _Open.ino_ to the XIAO ESP32-C6 using Arduino IDE or any other IDE you like.
+- From `03_src/` → Upload the file named _Open.ino_ to the XIAO ESP32-C6 using Arduino IDE or any other IDE you like.
 
 ### 5. 🔋 Power on and test
 Connect the LiPo battery cables, flip the power switch, and verify all systems initialize correctly. You can now place the robot on the track and press the button in order to initialize the program you want.
