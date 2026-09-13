@@ -65,7 +65,7 @@ Our mechanical design focuses on stability, and precise maneuverability to tackl
 
 
 ### 2. Steering System (Ackermann Geometry)
-To ensure smooth cornering and minimize tire scrubbing, we implemented an **Ackermann steering mechanism** which is the same type that comercial cars use.
+We used to have a simple paralel steering in our robot, but as we continued with our tests it was clear that the addition of a different type of steering was necessary. To ensure smooth cornering and minimize tire scrubbing, we implemented an **Ackermann steering mechanism** which is the same type that comercial cars use.
 * Actuated by the **MG90 Micro Servo** and a steering system assembled with 3 M2 screws ensure that our ackermann the type steering can work efficiently at all times.
 * This geometry is critical for maintaining traction and speed while navigating the tight turns of the challenge in general.
 
@@ -76,11 +76,15 @@ To ensure smooth cornering and minimize tire scrubbing, we implemented an **Acke
 
 ### 3. Drivetrain & Transmission
 * **Rear-Wheel Drive (RWD):** Driven by a single **N20 Pololu 300 RPM DC Motor**. While it was not the fist motor we used, the different design itterations helped us find the perfect motor to power out robot. 
-* **Power Transfer:** We designed a custom structure with bearings in order to use the lego differential (pieces 65413 and 65414) connecting the motor to the solid rear axle. This gear ratio was calculated to provide the perfect balance between top speed on the straightaways and high torque for the Obstacle Challenge maneuvers (like parallel parking). We opted for a lego build design due to the risks that a 3D printed one would give us.
+* **Power Transfer:** We designed a custom structure with bearings in order to use the lego differential (pieces 65413 and 65414) connecting the motor to the solid rear axle. Originally, the power transfer depended on two single gears of lego (32269 and 32270 being the second one the driver gear), however, this meant a lack of smooth cornering which led us to our new configuration. Our gear ratio was calculated to provide the perfect balance between top speed on the straightaways and high torque for the Obstacle Challenge maneuvers (like parallel parking or the obstacle avoidance). Finally, the design continued to be a mix of 3D printed parts with lego pieces due to the risks that a 3D printed one could have, and since we did not consider necessary to print in stronger materials (like abs or nylon) the legos were a perfect solution to us.
+
+| CAD | Final build |
+|:---:|:---:|
+| <div align="center"><img src="07_appendix/cad_steering.png" width="550" height="550"></div> | <div align="center"><img src="06_v-photos/Front_2.jpeg" width="425" height="425"></div> |
 
 ### 4. Sensor Integration
-* **RPLiDAR Tower:** Elevated and centrally mounted to guarantee a 360° unobstructed field of view, preventing any chassis parts from creating blind spots. It is mounted with M2.5 screws with perfectly designed holes in the cassis.
-* **Camera Mount:** The ESP32-CAM is mounted in front of the robot with a simple slot on the cassis so that it can still be taken out easily without compromising stability.
+* **RPLiDAR Tower:** Elevated and centrally mounted to guarantee a 360° unobstructed field of view, preventing any chassis parts from creating blind spots. It is mounted with M2.5 screws with perfectly designed holes in the cassis. It was hard to land with a design that could allow us to fit the electronics without compromising our lidar. Fortunately, the design choice of having to modular pieces was a perfect way of attacking this problem without the appearance of further problems regarding this.
+* **Camera Mount:** The ESP32-CAM is mounted in front of the robot with a simple slot on the cassis so that it can still be taken out easily without compromising stability. We consider this a perfect example of our design choices, since we did not had to create a whole assembly in order to mount the camera in the chassis.
 
 ### 🔄 Design Iterations
 
