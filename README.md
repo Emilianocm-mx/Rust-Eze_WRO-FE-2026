@@ -88,7 +88,7 @@ We used to have a simple paralel steering in our robot, but as we continued with
 
  | Mounting holes |
 |:---:|
-| <div align="center"><img src="07_appendix/blank_topview.png" width="550" height="550"></div> |
+| <div align="center"><img src="07_appendix/blank_topview.png" width="300"></div> |
 
 ### 🔄 Design Iterations
 
