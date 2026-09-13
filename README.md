@@ -13,16 +13,17 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 
 * [👥 Team](#team)
 * [📷 Vehicle Photos](#vehicle-photos)
-* [⚙️ Mechanical Design Process](#mechanical-design-process)
-* [⚡ Electrical System](#electrical-system)
-* [Wiring Diagram](#wiring-diagram)
+* [⚙️ Mechanical Design Process](#mechanical)
+* [⚡ Electrical System](#electrical)
+* [Wiring Diagram](#wiring)
 * [🛠️ Components](#components)
 * [💻 Source Code](#source-code)
-* [🔧 Build & Setup](#build-setup)
+* [🔧 Build & Setup](#build)
 * [👕 Team Photos](#team-photos)
 
 ---
 
+<a id="team"></a>
 ## 👥 Team
 
 | Name | Role |
@@ -34,6 +35,7 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 
 ---
 
+<a id="vehicle-photos"></a>
 ## 📷 Vehicle Photos
 
 | Front | Front-2 | Right |
@@ -44,6 +46,7 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 
 ---
 
+<a id="mechanical"></a>
 ## ⚙️ Mechanical Design Process
 
 Our mechanical design focuses on stability, and precise maneuverability to tackle the high-speed requirements of the WRO Future Engineers challenges. The entire robot was designed from scratch using CAD software and manufactured via 3D printing.
@@ -87,6 +90,7 @@ To ensure smooth cornering and minimize tire scrubbing, we implemented an **Acke
 
 ---
 
+<a id="electrical"></a>
 ## ⚡ Electrical System
 ![Electronic Scheme](schemes/Electronic_Scheme.jpg)
 
@@ -109,11 +113,14 @@ Pololu Motor         ▼      ▼          ▼
                 ESP32-C6  RPLiDAR  ESP32-CAM
 ```
 ---
+
+<a id="wiring"></a>
 ## Wiring Diagram
 <img width="1024" height="723" alt="image" src="https://github.com/user-attachments/assets/959afa32-fa0c-43f0-8441-2c4025aa1184" />
 
 ---
 
+<a id="components"></a>
 ## 🛠️ Components
 
 | Photo | Component | Description |
@@ -131,6 +138,7 @@ Pololu Motor         ▼      ▼          ▼
 
 ---
 
+<a id="source-code"></a>
 ## 💻 Source Code
 
 The main program runs on the **XIAO ESP32-C6**, which processes RPLiDAR distance data in real time, fuses it with IMU heading data, and controls both the steering servo and drive motor through a hybrid PID + yaw control system.
@@ -208,6 +216,7 @@ The Obstacle Challenge will extend the Open Challenge base with:
 
 ---
 
+<a id="challenge-summary"></a>
 ## 🏁 Challenge Summary
 
 | Feature | Open Challenge | Obstacle Challenge |
@@ -220,6 +229,7 @@ The Obstacle Challenge will extend the Open Challenge base with:
 
 ---
 
+<a id="build"></a>
 ## 🔧 Build & Setup
 
 ### 1. 🖨️ Print the chassis
@@ -241,6 +251,7 @@ Insert the LiPo battery, flip the power switch, and verify all systems initializ
 
 ---
 
+<a id="team-photos"></a>
 ## 👕 Team Photos 
 
 | Team | Paco | Emi | Oliver |
@@ -253,6 +264,7 @@ Insert the LiPo battery, flip the power switch, and verify all systems initializ
 
 ---
 
+<a id="videos"></a>
 ## 🎬 Videos
 
 | Challenge | Link |
