@@ -40,9 +40,9 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 
 | Front | Front-2 | Right |
 |:---:|:---:|:---:|
-| ![Front](01_v-photos/Front.jpeg) | ![Front_2](01_v-photos/Front_2.jpeg) | ![Left](01_v-photos/Left.jpeg) |
+| ![Front](06_v-photos/Front.jpeg) | ![Front_2](06_v-photos/Front_2.jpeg) | ![Left](06_v-photos/Left.jpeg) |
 | **Right-2** | **Top** | **Isometric** |
-| ![Right](01_v-photos/Right.jpeg) | ![Top](01_v-photos/Top.jpeg) | ![Isometric](01_v-photos/Isometric.jpg) |
+| ![Right](06_v-photos/Right.jpeg) | ![Top](06_v-photos/Top.jpeg) | ![Isometric](06_v-photos/Isometric.jpg) |
 
 ---
 
