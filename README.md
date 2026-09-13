@@ -15,7 +15,7 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 * [📷 Vehicle Photos](#vehicle-photos)
 * [⚙️ Mechanical Design Process](#mechanical)
 * [⚡ Electrical System](#electrical)
-* [Wiring Diagram](#wiring)
+* [🔌 Wiring Diagram](#wiring)
 * [🛠️ Components](#components)
 * [💻 Source Code](#source-code)
 * [🔧 Build & Setup](#build)
@@ -115,7 +115,7 @@ Pololu Motor         ▼      ▼          ▼
 ---
 
 <a id="wiring"></a>
-## Wiring Diagram
+## 🔌 Wiring Diagram
 <img width="1024" height="723" alt="image" src="https://github.com/user-attachments/assets/959afa32-fa0c-43f0-8441-2c4025aa1184" />
 
 ---
