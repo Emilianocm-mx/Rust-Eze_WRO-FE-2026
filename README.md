@@ -86,6 +86,10 @@ We used to have a simple paralel steering in our robot, but as we continued with
 * **RPLiDAR Tower:** Elevated and centrally mounted to guarantee a 360° unobstructed field of view, preventing any chassis parts from creating blind spots. It is mounted with M2.5 screws with perfectly designed holes in the cassis. It was hard to land with a design that could allow us to fit the electronics without compromising our lidar. Fortunately, the design choice of having to modular pieces was a perfect way of attacking this problem without the appearance of further problems regarding this.
 * **Camera Mount:** The ESP32-CAM is mounted in front of the robot with a simple slot on the cassis so that it can still be taken out easily without compromising stability. We consider this a perfect example of our design choices, since we did not had to create a whole assembly in order to mount the camera in the chassis.
 
+  | Mounting holes |
+|:---:|
+| <div align="center"><img src="07_appendix/blank_topview.png" width="550" height="550"></div> |
+
 ### 🔄 Design Iterations
 
 | Version | Focus Area | Key Improvements |
