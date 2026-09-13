@@ -88,7 +88,7 @@ We used to have a simple paralel steering in our robot, but as we continued with
 
 | Mounting holes | Final build |
 |:---:|:---:|
-| <div align="center"><img src="07_appendix/free_topview.png" width="550" height="550"></div> | <div align="center"><img src="07_appendix/free_bottomview.png" width="425" height="425"></div> |
+| <div align="center"><img src="07_appendix/free_topview.png" width="425" height="425"></div> | <div align="center"><img src="07_appendix/free_bottomview.png" width="425" height="425"></div> |
 
 ### 🔄 Design Iterations
 
