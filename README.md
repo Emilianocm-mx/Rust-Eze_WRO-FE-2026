@@ -334,7 +334,7 @@ Connect the LiPo battery cables, flip the power switch, and verify all systems i
 
 | Challenge | Link |
 |-----------|------|
-| Open Challenge — No obstacles | [Watch](video/Video1_SinObs.mp4) |
+| Open Challenge — No obstacles | [Watch](05_video/WRO_Open_Challenge.mp4) |
 | Obstacle Challenge | *Coming soon* |
 ---
 - [Go to top](#-rust-eze--wro-2026-future-engineers)
