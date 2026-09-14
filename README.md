@@ -268,8 +268,8 @@ Development Evolution & Our Technical Challenges
 | Feature | Open Challenge | Obstacle Challenge |
 |---------|---------------|-------------------|
 | Laps | 3 | 3 |
-| Traffic signs | ✗ | ✓ Red & Green pillars |
-| Parking | ✗ | ✓ Parallel parking |
+| Traffic signs | - | ✓ Red & Green pillars |
+| Parking | - | ✓ Parallel parking |
 | Primary sensor | RPLiDAR | RPLiDAR + ESP32-CAM |
 
 ---
