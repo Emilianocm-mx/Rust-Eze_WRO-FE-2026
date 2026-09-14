@@ -220,7 +220,7 @@ The Obstacle Challenge software relies on a tightly coupled sensor fusion archit
 
 | Red obstacle | Green obstacle |
 |:---:|:---:|
-| <div align="center"><img src="07_appendix/obstacle_red.png" width="550" height="550"></div> | <div align="center"><img src="07_appendix/obstacle_green.png" width="550" height="550"></div> |
+| <div align="center"><img src="07_appendix/obstacle_red.jpeg" width="550" height="550"></div> | <div align="center"><img src="07_appendix/obstacle_jpeg.png" width="550" height="550"></div> |
 
 **Vision-to-LiDAR Spatial Mapping:** The ESP32-CAM processes frames and transmits color (Red/Green) and bounding box data via a CRC16-validated UART protocol. Because a 2D camera cannot measure depth accurately, the C6 calculates the visual bearing of the bounding box (imageAngle) and feeds it into the findPillar() function. This function scans the 360° RPLiDAR array at that specific angle to extract the exact physical distance and width of the pillar.
 
