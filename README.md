@@ -313,7 +313,9 @@ Connect the LiPo battery cables, flip the power switch, and verify all systems i
 | 12 | Power Switch | Toggle mechanism for turning system power on and off | $1 USD |
 | 13 | BMI160 | 6-axis Inertial Measurement Unit measuring orientation and motion | $4 USD |
 | 14 | Button | User input switch for triggering custom code or system reset | $1 USD |
-| | | | TOTAL: $165 USD|
+| 15 | Bearing 6x10x3 | | $1 USD |
+| 16 | Bearing 17x4x5 | | $4 USD |
+| | | | TOTAL: $170 USD|
 
 ---
 <a id="team-photos"></a>
