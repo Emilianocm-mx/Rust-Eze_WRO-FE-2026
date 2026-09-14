@@ -88,7 +88,7 @@ We used to have a simple paralel steering in our robot, but as we continued with
 
 For every full rotation of the motor shaft, the differential input rotates 0.43 times. The LEGO new-generation differential distributes torque between both rear wheels with a 1:1 ratio in straight-line motion. During turns, it allows the wheels to rotate at different speeds independently, eliminating tire scrubbing.
 
-**🔑 Key Torque & Performance Choices**
+** Our torque & performance choices**
 * **Mechanical Advantage:** The 2.33:1 gear reduction via the LEGO differential provides adequate torque multiplication for the robot's weight, especially after removing the RPi and powerbank.
 * **Overvolting for Performance:** Operating the N20 at 7.4V instead of its 6V nominal rating provides a ~23% increase in both RPM and torque, which compensates for drivetrain friction losses.
 * **Electrical Safety:** The TB6612FNG driver operates well within its safe limits with the N20 motor at 7.4V.
