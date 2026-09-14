@@ -126,7 +126,7 @@ Pololu Motor         ▼      ▼          ▼
 
 <a id="wiring"></a>
 ## 🔌 Wiring Diagram
-<img width="1024" height="723" alt="image" src="02_schemes/Schematic_WRO.png" />
+<img width="1024" height="723" alt="image" src="02_schemes/Schematic_WRO.pdf" />
 
 ---
 
