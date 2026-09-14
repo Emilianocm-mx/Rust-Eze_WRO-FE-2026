@@ -218,6 +218,10 @@ After 12 corners (3 laps × 4 corners), the robot enters `FINAL_APPROACH` state,
 🚧 Obstacle Challenge
 The Obstacle Challenge software relies on a tightly coupled sensor fusion architecture running on the XIAO ESP32-C6. Rather than executing hardcoded routines, the robot operates on a reactive state machine that dynamically calculates trajectories based on real-time LiDAR point clouds, IMU gyroscope integration, and ESP32-CAM visual data.
 
+| Red obstacle | Green obstacle |
+|:---:|:---:|
+| <div align="center"><img src="07_appendix/obstacle_red.png" width="550" height="550"></div> | <div align="center"><img src="07_appendix/obstacle_green.png" width="550" height="550"></div> |
+
 **Vision-to-LiDAR Spatial Mapping:** The ESP32-CAM processes frames and transmits color (Red/Green) and bounding box data via a CRC16-validated UART protocol. Because a 2D camera cannot measure depth accurately, the C6 calculates the visual bearing of the bounding box (imageAngle) and feeds it into the findPillar() function. This function scans the 360° RPLiDAR array at that specific angle to extract the exact physical distance and width of the pillar.
 
 **Dynamic Evasion (maneuverHeading & adaptPassToWall):** Once a pillar is mapped, the robot determines the passing side (Red = right, Green = left). It calculates a plannedOffset by measuring the available space between the pillar and the lane walls (laneWallDistance). The maneuverHeading function then generates a target yaw angle to steer the robot smoothly around the obstacle without hitting the perimeter walls.
