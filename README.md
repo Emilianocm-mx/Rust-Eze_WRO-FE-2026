@@ -128,6 +128,23 @@ Pololu Motor         ▼      ▼          ▼
 ## 🔌 Wiring Diagram
 <img width="1024" height="723" alt="image" src="02_schemes/Schematic_WRO.png" />
 
+
+### Pin Reference
+
+| Component | ESP32-C6 Pin | Function |
+|-----------|-------------|----------|
+| LiDAR RX | GPIO 19 | UART data from LiDAR |
+| LiDAR TX | GPIO 16 | UART data to LiDAR |
+| LiDAR motor | GPIO 20 | PWM speed control |
+| Servo MG90 | GPIO 0 | Steering PWM |
+| Motor PWMA | GPIO 22 | Drive motor speed |
+| Motor AIN1 | GPIO 23 | Drive motor direction A |
+| Motor AIN2 | GPIO 2 | Drive motor direction B |
+| ESP32-CAM RX | GPIO 21 | UART from camera |
+| ESP32-CAM TX | GPIO 17 | UART to camera |
+| IMU SDA | GPIO 18 | I2C data (BMI160) |
+| IMU SCL | GPIO 1 | I2C clock (BMI160) |
+
 ---
 
 <a id="components"></a>
@@ -198,31 +215,24 @@ After 12 corners (3 laps × 4 corners), the robot enters `FINAL_APPROACH` state,
 
 ### 🚧 Obstacle Challenge
 
-*Implementation in progress. The ESP32-CAM color detection pipeline and parking maneuver logic are currently under development.*
+🚧 Obstacle Challenge
+The Obstacle Challenge software relies on a tightly coupled sensor fusion architecture running on the XIAO ESP32-C6. Rather than executing hardcoded routines, the robot operates on a reactive state machine that dynamically calculates trajectories based on real-time LiDAR point clouds, IMU gyroscope integration, and ESP32-CAM visual data.
 
-The Obstacle Challenge will extend the Open Challenge base with:
-- Color classification of red and green pillars using the ESP32-CAM
-- Steering offset logic to pass red pillars on the right and green pillars on the left
-- Detection of the magenta parking lot boundaries using the LiDAR after lap 3
-- Parallel parking maneuver into the designated area
+**Vision-to-LiDAR Spatial Mapping:** The ESP32-CAM processes frames and transmits color (Red/Green) and bounding box data via a CRC16-validated UART protocol. Because a 2D camera cannot measure depth accurately, the C6 calculates the visual bearing of the bounding box (imageAngle) and feeds it into the findPillar() function. This function scans the 360° RPLiDAR array at that specific angle to extract the exact physical distance and width of the pillar.
 
----
+**Dynamic Evasion (maneuverHeading & adaptPassToWall):** Once a pillar is mapped, the robot determines the passing side (Red = right, Green = left). It calculates a plannedOffset by measuring the available space between the pillar and the lane walls (laneWallDistance). The maneuverHeading function then generates a target yaw angle to steer the robot smoothly around the obstacle without hitting the perimeter walls.
 
-### Pin Reference
+**Corner Detection & Reversing Maneuvers:** Instead of relying on a single distance threshold, fitCornerWall() uses a mathematical line-fitting algorithm to analyze multiple LiDAR points and confirm a flat wall is ahead. Combined with sampleCornerEvidence()—which verifies the front is blocked, the right is open, and the left is closed—the robot initiates a precise IMU-guided turn (REVERSING_TURN), applying reverse motor thrust if clearance (FRONT_CHASSIS_GAP_MM) drops too low.
 
-| Component | ESP32-C6 Pin | Function |
-|-----------|-------------|----------|
-| LiDAR RX | GPIO 19 | UART data from LiDAR |
-| LiDAR TX | GPIO 16 | UART data to LiDAR |
-| LiDAR motor | GPIO 20 | PWM speed control |
-| Servo MG90 | GPIO 0 | Steering PWM |
-| Motor PWMA | GPIO 22 | Drive motor speed |
-| Motor AIN1 | GPIO 23 | Drive motor direction A |
-| Motor AIN2 | GPIO 2 | Drive motor direction B |
-| ESP32-CAM RX | GPIO 21 | UART from camera |
-| ESP32-CAM TX | GPIO 17 | UART to camera |
-| IMU SDA | GPIO 18 | I2C data (BMI160) |
-| IMU SCL | GPIO 1 | I2C clock (BMI160) |
+**State Machine & Fault Recovery (serviceRecovery)**: The robot cycles through states like MOVING, PARALLEL, and CENTERING. If sensor data drops (e.g., LiDAR UART lag or missing camera frames), the robot instantly enters a RECOVERING state, cutting motor power (ESPERA_DATOS) until stable readings return, preventing blind crashes.
+
+Development Evolution & Our Technical Challenges
+
+**Camera Processing Latency:** Early versions of the code suffered from "ghost pillars." By the time the ESP32-CAM finished processing a frame and sent it to the C6, the robot had already moved and rotated, making the camera's angle data obsolete. We solved this by recording the IMU's exact heading (photoYaw) the millisecond a photo is requested, allowing the C6 to mathematically offset the camera's bearing by the exact amount the robot turned during the processing delay.
+
+**LiDAR Noise and False Corners:** The RPLiDAR (Or at least our model - A1M8) occasionally returns fragmented points or is unnable to detect the walls after certain distances do to the black matte color we chose as painting, triggering false corners or simply not giving back any data. We evolved the code from basic distance thresholds to the current CornerEvidence system, which requires simultaneous confirmation of a solid front wall (via line-fitting), an open side passage, and an opposite solid wall before committing to a turn.
+
+**Serial Communication Bottlenecks:** Managing two high-speed UART streams (LiDAR at 115200 baud, Camera at 38400 baud) alongside I2C IMU reads caused buffer overflows and corrupted packets. We implemented a custom LidarStreamReader ring buffer and strict CRC16 checksums for the camera, allowing the system to instantly discard corrupted bytes without crashing the main loop.
 
 ---
 
