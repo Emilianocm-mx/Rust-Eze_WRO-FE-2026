@@ -19,6 +19,7 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 * [🛠️ Components](#components)
 * [💻 Source Code](#source-code)
 * [🔧 Build & Setup](#build)
+* [💰 Components Cost](#Components-Cost)
 * [👕 Team Photos](#team-photos)
 
 ---
@@ -290,6 +291,8 @@ Connect each microcontroller to a computer and flash the corresponding programs:
 Connect the LiPo battery cables, flip the power switch, and verify all systems initialize correctly. You can now place the robot on the track and press the button in order to initialize the program you want.
 
 ---
+<a id="Components-Cost"></a>
+## 💰 Components Cost
 
 | ID | Component | Description | Approximate Cost |
 |:---:|:---:|:---:|:---:|
