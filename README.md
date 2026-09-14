@@ -291,6 +291,25 @@ Connect the LiPo battery cables, flip the power switch, and verify all systems i
 
 ---
 
+| ID | Component | Description | Approximate Cost |
+|:---:|:---:|:---:|:---:|
+| 1 | Top and Chassis | Main structural frame holding all robot components (PETG) | $5 USD |
+| 2 | Steering Parts | Mechanical linkages and mounts for wheel direction control (PETG) | $1 USD |
+| 3 | LEGO Wheels | Rubber tires and rims providing traction and mobility | $1.5 USD |
+| 4 | XIAO ESP32-C6 | Primary microcontroller for overall processing and wireless connectivity | $5 USD |
+| 5 | RPLiDAR A1M8 | 360-degree laser scanner for environment mapping and obstacle detection | $100 USD |
+| 6 | ESP32-CAM | Microcontroller with integrated camera module for video feed and Wi-Fi | $7 USD |
+| 7 | TB6612FNG Motor Driver | Dual H-bridge module for controlling DC motor speed and direction | $5 USD |
+| 8 | Pololu DC Motor 300 RPM | High-torque geared motor driving the primary drivetrain wheels | $7 USD |
+| 9 | MG90 Micro Servo | Compact actuator responsible for precise steering adjustments | $5 USD |
+| 10 | LM2596 Step-Down Regulator | Buck converter reducing battery voltage to stable system levels | $2.5 USD |
+| 11 | LiPo Battery 7.4V 800mAh | Rechargeable power source providing high current for electronics and motors | $20 USD |
+| 12 | Power Switch | Toggle mechanism for turning system power on and off | $1 USD |
+| 13 | BMI160 | 6-axis Inertial Measurement Unit measuring orientation and motion | $4 USD |
+| 14 | Button | User input switch for triggering custom code or system reset | $1 USD |
+
+
+---
 <a id="team-photos"></a>
 ## 👕 Team Photos 
 
