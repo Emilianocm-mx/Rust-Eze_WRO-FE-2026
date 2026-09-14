@@ -78,6 +78,22 @@ We used to have a simple paralel steering in our robot, but as we continued with
 * **Rear-Wheel Drive (RWD):** Driven by a single **N20 Pololu 300 RPM DC Motor**. While it was not the fist motor we used, the different design itterations helped us find the perfect motor to power out robot. 
 * **Power Transfer:** We designed a custom structure with bearings in order to use the lego differential (pieces 65413 and 65414) connecting the motor to the solid rear axle. Originally, the power transfer depended on two single gears of lego (32269 and 32270 being the second one the driver gear), however, this meant a lack of smooth cornering which led us to our new configuration. Our gear ratio was calculated to provide the perfect balance between top speed on the straightaways and high torque for the Obstacle Challenge maneuvers (like parallel parking or the obstacle avoidance). Finally, the design continued to be a mix of 3D printed parts with lego pieces due to the risks that a 3D printed one could have, and since we did not consider necessary to print in stronger materials (like abs or nylon) the legos were a perfect solution to us.
 
+##Transmission & Gear Ratio
+
+| Parameter | Specification |
+|-----------|---------------|
+| Driver gear | 12T |
+| Driven gear | 28T |
+| **Total Gear Ratio** | **2.33:1** |
+
+For every full rotation of the motor shaft, the differential input rotates 0.43 times. The LEGO new-generation differential distributes torque between both rear wheels with a 1:1 ratio in straight-line motion. During turns, it allows the wheels to rotate at different speeds independently, eliminating tire scrubbing.
+
+**🔑 Key Torque & Performance Choices**
+* **Mechanical Advantage:** The 2.33:1 gear reduction via the LEGO differential provides adequate torque multiplication for the robot's weight, especially after removing the RPi and powerbank.
+* **Overvolting for Performance:** Operating the N20 at 7.4V instead of its 6V nominal rating provides a ~23% increase in both RPM and torque, which compensates for drivetrain friction losses.
+* **Electrical Safety:** The TB6612FNG driver operates well within its safe limits with the N20 motor at 7.4V.
+* **Weight Optimization:** Migrating from RPi + powerbank to a standalone ESP32 system is estimated to reduce robot weight by 200–250g, improving torque margin from tight to comfortable.
+
 | CAD | Final build |
 |:---:|:---:|
 | <div align="center"><img src="07_appendix/cad_steering.png" width="550" height="550"></div> | <div align="center"><img src="06_v-photos/Front_2.jpeg" width="425" height="425"></div> |
