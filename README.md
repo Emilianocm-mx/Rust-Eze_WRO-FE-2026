@@ -15,6 +15,7 @@ Official repository of team **Rust-eze** for the WRO 2026 Future Engineers categ
 * [📷 Vehicle Photos](#vehicle-photos)
 * [⚙️ Mechanical Process](#mechanical)
 * [⚡ Electrical System](#electrical)
+* [🔋 Power Budget](#Power-Budget)
 * [🔌 Wiring Diagram](#wiring)
 * [🛠️ Components](#components)
 * [💻 Source Code](#source-code)
@@ -121,24 +122,26 @@ For every full rotation of the motor shaft, the differential input rotates 0.43 
 ## ⚡ Electrical System
 ![Electronic Scheme](02_schemes/Electronic_diagram.jpg)
 
-### Power Architecture
+---
+<a id="Power-Budget"></a>
+### 🔋 Power Budget
 
-```
-LiPo Battery 7.4V
-        │
-    [Switch]
-        │
-    ┌───┴──────────────────┐
-    │                      │
-    ▼                      ▼
-TB6612FNG                LM2596
-Motor Driver           Step-down
-  (7.4V)                5V out
-    │                      │
-    ▼                ┌──────┼──────────┐
-Pololu Motor         ▼      ▼          ▼
-                ESP32-C6  RPLiDAR  ESP32-CAM
-```
+The entire vehicle is powered by a 7.4V 800mAh 2S LiPo battery. Power splits into two primary pathways following the main toggle switch (U1): the motor driver takes the 7.4V battery voltage directly to power the DC motor (VM pin), while the rest of the system is fed through an LM2596 step-down converter producing a stable 5V supply at up to 3A.
+
+| Rail | Voltage | Consumers | Estimated Peak Current |
+|:---|:---:|:---|:---:|
+| Main Power Rail | 7.4V (2S LiPo) | Total system power distribution through Switch (U1) | ~1.85 A |
+| 5V Regulated Rail | 5V | LM2596 Converter output -> XIAO ESP32-C6, ESP32-CAM, RPLiDAR A1M8, MG90 Micro Servo, TB6612FNG (VCC logic) | ~1.30 A |
+| 7.4V Motor Rail | 7.4V | TB6612FNG Driver (VM) -> Pololu DC Motor (N20) | ~0.50 A |
+| 3.3V Logic Rail | 3.3V | GY-BMI160 (IMU) & Push-Button (fed via XIAO ESP32-C6 internal 3.3V regulator) | ~50 mA |
+
+### Battery Selection & Justification
+
+* **Voltage Compatibility:** The 7.4V (2S LiPo) nominal voltage provides optimal operating voltage for the Pololu DC motor without needing a boost converter, while offering enough voltage overhead for the LM2596 buck converter to cleanly step down to 5V.
+* **Separation of Power Paths:** Feeding 7.4V directly to the TB6612FNG motor driver (VM) isolates motor stall-current spikes and noise from the 5V logic rail. This prevents brownouts and reboots on the XIAO ESP32-C6, ESP32-CAM, and RPLiDAR A1M8 during sudden motor acceleration.
+* **Discharge Headroom:** Standard 800mAh 2S LiPo batteries feature continuous discharge ratings of at least 20C (16 A continuous output). With a total system peak draw of ~1.85 A, the vehicle draws under 12% of the battery's maximum discharge capability, protecting the cells from overheating and voltage drop.
+* **Weight & Operating Time:** At a typical average draw of 600–800 mA during autonomous navigation, the 800mAh capacity provides around 45 to 60 minutes of runtime while maintaining a low overall vehicle mass.
+
 ---
 
 <a id="wiring"></a>
@@ -310,7 +313,7 @@ Connect the LiPo battery cables, flip the power switch, and verify all systems i
 | 12 | Power Switch | Toggle mechanism for turning system power on and off | $1 USD |
 | 13 | BMI160 | 6-axis Inertial Measurement Unit measuring orientation and motion | $4 USD |
 | 14 | Button | User input switch for triggering custom code or system reset | $1 USD |
-
+| | | | TOTAL: $165 USD|
 
 ---
 <a id="team-photos"></a>
