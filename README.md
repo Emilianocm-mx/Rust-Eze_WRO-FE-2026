@@ -170,6 +170,8 @@ Pololu Motor         ▼      ▼          ▼
 
 The main program runs on the **XIAO ESP32-C6**, which processes RPLiDAR distance data in real time, fuses it with IMU heading data, and controls both the steering servo and drive motor through a hybrid PID + yaw control system.
 
+We would like to include more images but since the lidar does not map due to the way our code works the only images that we can provide come from the esp-cam.
+
 ---
 
 ### System Capabilities
